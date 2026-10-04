@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>مِيزان — طابور المراجعة</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="/">مِيزان<span>.</span></a>
+    <div class="tag">طابور المراجعة البشرية</div>
+    <nav class="nav" aria-label="التنقل">
+      <a href="/">الفحص</a>
+      <a href="/review" aria-current="page">طابور المراجعة <b class="nav-count" id="navcount" hidden></b></a>
+    </nav>
+    <div class="no-fatwa">لا يُفتي · لا يترجم · يُسنِد فقط</div>
+  </div>
+  <p class="nature">
+    مِيزان أداة آلية لا تقرّر قبول نص. كل بند هنا لم يُسنَد إلى ترجمة معتمدة مفهرسة،
+    والقرار فيه لإنسان؛ مِيزان يسجّله فقط.
+  </p>
+</header>
+
+<main class="wrap">
+  <h1>طابور المراجعة البشرية</h1>
+
+  <section class="panel reviewer">
+    <label for="reviewer"><b>اسم المراجع</b> <span class="muted small">— يُسجَّل مع كل قرار في سجل التدقيق كما تكتبه</span></label>
+    <input id="reviewer" type="text" maxlength="80" autocomplete="off" placeholder="الاسم أو الصفة، مثل: لجنة المراجعة الشرعية — أ. محمد">
+    <p class="muted small">القرارات تُضاف ولا تُعدَّل ولا تُحذف: إن تغيّر رأيك فسجّل قرارًا جديدًا، ويبقى السابق ظاهرًا في السجل باسمه ووقته.</p>
+  </section>
+
+  <div class="filters" role="tablist" aria-label="تصفية الطابور">
+    <button type="button" role="tab" data-status="open" aria-selected="true">المفتوحة <b id="c-open">0</b></button>
+    <button type="button" role="tab" data-status="closed" aria-selected="false">المغلقة <b id="c-closed">0</b></button>
+    <button type="button" role="tab" data-status="all" aria-selected="false">الكل <b id="c-total">0</b></button>
+  </div>
+
+  <div id="queue" aria-live="polite"><div class="empty">…تحميل الطابور</div></div>
+
+  <section class="psec" aria-labelledby="logh">
+    <h2 class="ph" id="logh">سجل التدقيق — يُضاف إليه ولا يُعدَّل</h2>
+    <div id="log"><div class="empty">…تحميل السجل</div></div>
+  </section>
+
+  <details class="privacy">
+    <summary>الخصوصية وما يُحفظ</summary>
+    <p id="privacy">لا حسابات، ولا تتبّع، ولا تحليلات.</p>
+  </details>
+
+  <footer class="foot">
+    <span id="footstats">…</span>
+    <span>البيانات من <a href="https://quranpedia.net" rel="noopener noreferrer"><code>quranpedia.net</code></a> — نصوص الترجمات منقولة حرفيًا دون تعديل</span>
+    <span>النص القرآني العربي من <a href="https://tanzil.net" rel="noopener noreferrer"><code>tanzil.net</code></a> (Creative Commons Attribution 3.0) منقول حرفيًا دون تعديل</span>
+  </footer>
+</main>
+
+<script src="common.js"></script>
+<script src="review.js"></script>
+</body>
+</html>

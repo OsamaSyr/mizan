@@ -1,0 +1,40 @@
+# /etc/systemd/system/mizan.service  (installed by deploy/provision.sh)
+#
+# One process, always on: restarted within seconds if it ever exits, and not
+# reported "started" until bge-m3 and every language are loaded (prewarm), so
+# no judge ever pays the model load.
+[Unit]
+Description=MIZAN - Qur'anic quotation attribution gate (public demo)
+Documentation=file:///opt/mizan/app/docs/DEPLOY.md
+After=network-online.target
+Wants=network-online.target
+# Never give up restarting.
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=mizan
+Group=mizan
+WorkingDirectory=/opt/mizan/app
+EnvironmentFile=/etc/mizan/mizan.env
+ExecStart=/opt/mizan/venv/bin/python /opt/mizan/app/app.py
+# Load the model + all language indexes now, and record whether the AI tier is
+# up in /var/lib/mizan-status/ai.json. The leading "-" means a failed prewarm
+# never stops the (deterministic) service.
+ExecStartPost=-/opt/mizan/venv/bin/python /opt/mizan/app/deploy/probe.py prewarm --base http://${MIZAN_HOST}:${MIZAN_PORT} --status-file /var/lib/mizan-status/ai.json
+TimeoutStartSec=600
+Restart=always
+RestartSec=2
+# app.py exits cleanly on KeyboardInterrupt.
+KillSignal=SIGINT
+TimeoutStopSec=15
+
+# Hardening that does not get in the way.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target

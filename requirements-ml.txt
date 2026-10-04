@@ -1,0 +1,45 @@
+# MIZAN — OPTIONAL extras for the semantic tier (tier c, BAAI/bge-m3, local).
+#
+# The core project needs none of this: `python3 app.py` and
+# `python3 -m pytest` run on the standard library alone, and detection then uses
+# its deterministic tiers only. That degraded mode is the documented
+# alternative for this critical dependency (docs/SEMANTIC.md).
+#
+# Install into the project virtualenv, never system-wide.
+#
+# macOS (Apple Silicon or Intel):
+#
+#     python3.11 -m venv .venv
+#     .venv/bin/pip install -r requirements-ml.txt
+#
+# Linux servers — install torch from PyTorch's CPU wheel index FIRST. From PyPI,
+# `pip install torch` on Linux pulls the CUDA build plus several GB of NVIDIA
+# libraries that a CPU-only server never uses. With torch already satisfied,
+# the second command keeps it and installs the rest from PyPI:
+#
+#     python3.11 -m venv .venv
+#     .venv/bin/pip install "torch==2.14.1" --index-url https://download.pytorch.org/whl/cpu
+#     .venv/bin/pip install -r requirements-ml.txt
+#
+# Then, on either:
+#
+#     .venv/bin/python scripts/build_embeddings.py --download   # ~2.3 GB, once
+#     .venv/bin/python scripts/build_embeddings.py              # only if data/embeddings/ is missing
+#                                                               # (hours on CPU; ~9 min on Apple MPS)
+#
+# Measured on the build machine (Apple M5, macOS, Python 3.11.0):
+#     .venv with these packages ............ 916 MB
+#     bge-m3 weights (HF cache, pinned rev)  2.1 GB
+#     data/embeddings/ (shipped index) ..... 73 MB
+#     index build, MPS fp16 ................ ~9 min for 137,180 renderings + 6,236 Arabic verses
+#
+# Versions are the ones every number in docs/SEMANTIC.md was measured with.
+# The model revision itself is pinned in src/mizan/semantic.py.
+
+torch==2.14.1
+transformers==4.57.6
+tokenizers==0.22.2
+safetensors==0.8.0
+numpy==2.4.6
+huggingface_hub>=0.24     # only for --download
+pytest>=8                 # to run the semantic tests from the venv

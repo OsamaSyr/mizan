@@ -1,0 +1,9 @@
+# Throwaway "fresh Debian 12 server" with systemd as PID 1, to run
+# deploy/provision.sh end to end on a laptop (test only).
+#   docker build -f deploy/experiments/Dockerfile.systemd-test -t mizan-systemd-test deploy/experiments
+FROM debian:12
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      systemd systemd-sysv dbus python3 iproute2 procps ca-certificates curl \
+ && rm -rf /var/lib/apt/lists/*
+STOPSIGNAL SIGRTMIN+3
+CMD ["/sbin/init"]

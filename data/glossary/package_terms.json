@@ -1,0 +1,229 @@
+{
+  "source": "المرجعية والحزمة العلمية والبيانات — تحدي الذكاء الاصطناعي في خدمة المحتوى الإسلامي، نسخة 20/3/1448، ص 8: «نماذج لقاموس المصطلحات الأساسية»",
+  "note": "usage_rule_ar is verbatim from the package. usage_rule_en is MIZAN's translation. discouraged_en is MIZAN's narrow reading of each rule (see 'basis'); it is NOT package text.",
+  "terms": [
+    {
+      "term_ar": "الإسلام",
+      "approved_en_raw": "Islam",
+      "usage_rule_ar": "دين الاستسلام لله بالتوحيد والانقياد له بالطاعة، ويشرح بحسب السياق ولا يختزل في معنى ثقافي عام.",
+      "usage_rule_en": "Submission to God through Tawhid and obedience; explained by context, never reduced to a general cultural meaning.",
+      "discouraged_en": [
+        "Islamic culture",
+        "Muslim culture",
+        "cultural identity",
+        "Muslim identity"
+      ],
+      "basis": "ولا يختزل في معنى ثقافي عام",
+      "approved_en": [
+        "Islam"
+      ],
+      "jamhara": {
+        "word_id": 1018,
+        "approved_en": [
+          "Islam"
+        ],
+        "source_url": "https://islamic-content.com/dictionary/word/1018/en"
+      }
+    },
+    {
+      "term_ar": "التوحيد",
+      "approved_en_raw": "Tawhid / Oneness of God",
+      "usage_rule_ar": "يفضل إبقاء المصطلح مع شرح معناه إفراد الله بالربوبية والألوهية ووصفه بما جاء الوحي به من أسمائه الحسنى؛ ولا يختزل في ترجمة قد توحي بمجرد الوحدانية العددية.",
+      "usage_rule_en": "Keep the term and explain it; do not reduce it to a rendering that suggests mere numerical oneness.",
+      "discouraged_en": [
+        "numerical oneness",
+        "numerical unity",
+        "unitarianism",
+        "monism"
+      ],
+      "basis": "ولا يختزل في ترجمة قد توحي بمجرد الوحدانية العددية",
+      "approved_en": [
+        "Tawhid",
+        "Oneness of God"
+      ],
+      "jamhara": {
+        "word_id": 3529,
+        "approved_en": [
+          "Monotheism",
+          "Tawheed"
+        ],
+        "source_url": "https://islamic-content.com/dictionary/word/3529/en"
+      }
+    },
+    {
+      "term_ar": "العبادة",
+      "approved_en_raw": "Worship",
+      "usage_rule_ar": "تشمل أعمال القلب والقول والعمل التي يتقرب بها العبد إلى الله، ولا تحصر في الشعائر فقط.",
+      "usage_rule_en": "Covers acts of the heart, speech and limbs by which a servant draws near to God; not confined to rites.",
+      "discouraged_en": [
+        "rituals",
+        "ritual",
+        "rites",
+        "rite",
+        "ritual practice",
+        "religious rituals"
+      ],
+      "basis": "ولا تحصر في الشعائر فقط",
+      "approved_en": [
+        "Worship"
+      ],
+      "jamhara": {
+        "word_id": 6732,
+        "approved_en": [
+          "Worship",
+          "`Ibaadah"
+        ],
+        "source_url": "https://islamic-content.com/dictionary/word/6732/en"
+      }
+    },
+    {
+      "term_ar": "النبوة",
+      "approved_en_raw": "Prophethood",
+      "usage_rule_ar": "تستخدم للدلالة على اصطفاء الأنبياء بالوحي، مع التمييز بينها وبين القيادة الدينية البشرية.",
+      "usage_rule_en": "God's selection of prophets by revelation, kept distinct from human religious leadership.",
+      "discouraged_en": [
+        "religious leadership",
+        "spiritual leadership",
+        "spiritual leader",
+        "religious leader"
+      ],
+      "basis": "مع التمييز بينها وبين القيادة الدينية البشرية",
+      "approved_en": [
+        "Prophethood"
+      ],
+      "jamhara": {
+        "word_id": 10342,
+        "approved_en": [
+          "Prophethood"
+        ],
+        "source_url": "https://islamic-content.com/dictionary/word/10342/en"
+      }
+    },
+    {
+      "term_ar": "الوحي",
+      "approved_en_raw": "Revelation",
+      "usage_rule_ar": "يشرح بوصفه ما أوحاه الله إلى أنبيائه، مع تجنب استعمالات فضفاضة قد توهم الإلهام الشخصي.",
+      "usage_rule_en": "What God revealed to His prophets; avoid loose uses that suggest personal inspiration.",
+      "discouraged_en": [
+        "inspiration",
+        "personal inspiration",
+        "intuition",
+        "spiritual insight"
+      ],
+      "basis": "مع تجنب استعمالات فضفاضة قد توهم الإلهام الشخصي",
+      "approved_en": [
+        "Revelation"
+      ],
+      "jamhara": {
+        "word_id": 10849,
+        "approved_en": [
+          "Revelation"
+        ],
+        "source_url": "https://islamic-content.com/dictionary/word/10849/en"
+      }
+    },
+    {
+      "term_ar": "الشريعة",
+      "approved_en_raw": "Sharia / Islamic law and guidance",
+      "usage_rule_ar": "يشرح بحسب السياق، ولا يختزل في العقوبات أو القانون الجنائي.",
+      "usage_rule_en": "Explained by context; never reduced to punishments or criminal law.",
+      "discouraged_en": [
+        "Islamic penal law",
+        "penal law",
+        "penal code",
+        "criminal law",
+        "Islamic criminal law",
+        "punishments",
+        "punishment"
+      ],
+      "basis": "ولا يختزل في العقوبات أو القانون الجنائي",
+      "approved_en": [
+        "Sharia",
+        "Islamic law and guidance"
+      ],
+      "jamhara": {
+        "word_id": 5979,
+        "approved_en": [
+          "The sharia",
+          "Sharee‘ah"
+        ],
+        "source_url": "https://islamic-content.com/dictionary/word/5979/en"
+      }
+    },
+    {
+      "term_ar": "الحديث",
+      "approved_en_raw": "Hadith",
+      "usage_rule_ar": "ما نُقل عن النبي ﷺ من قول أو فعل أو تقرير ونحو ذلك، مع بيان درجة الثبوت عند الاستدلال.",
+      "usage_rule_en": "What is reported from the Prophet ﷺ of word, deed or approval; state its grade when used as proof.",
+      "discouraged_en": [],
+      "basis": "",
+      "approved_en": [
+        "Hadith"
+      ],
+      "jamhara": {
+        "word_id": 4139,
+        "approved_en": [
+          "Hadith"
+        ],
+        "source_url": "https://islamic-content.com/dictionary/word/4139/en"
+      }
+    },
+    {
+      "term_ar": "السنة",
+      "approved_en_raw": "Sunnah",
+      "usage_rule_ar": "هدي النبي ﷺ وطريقته، ويحدد المقصود بحسب السياق العلمي.",
+      "usage_rule_en": "The Prophet's ﷺ guidance and way; the intended sense is fixed by the scholarly context.",
+      "discouraged_en": [],
+      "basis": "",
+      "approved_en": [
+        "Sunnah"
+      ],
+      "jamhara": {
+        "word_id": 5744,
+        "approved_en": [
+          "The sunnah"
+        ],
+        "source_url": "https://islamic-content.com/dictionary/word/5744/en"
+      }
+    },
+    {
+      "term_ar": "الفتوى",
+      "approved_en_raw": "Fatwa",
+      "usage_rule_ar": "جواب شرعي يصدره مؤهل في واقعة أو سؤال؛ ولا يساوى بالمعلومة العامة.",
+      "usage_rule_en": "A shar'i answer issued by a qualified person on a case or question; not equated with general information.",
+      "discouraged_en": [
+        "general information"
+      ],
+      "basis": "ولا يساوى بالمعلومة العامة",
+      "approved_en": [
+        "Fatwa"
+      ],
+      "jamhara": {
+        "word_id": 7399,
+        "approved_en": [
+          "Fatwa"
+        ],
+        "source_url": "https://islamic-content.com/dictionary/word/7399/en"
+      }
+    },
+    {
+      "term_ar": "الدعوة",
+      "approved_en_raw": "Da‘wah / Invitation to Islam",
+      "usage_rule_ar": "التعريف بالإسلام والدعوة إليه بالحكمة، ويختار المقابل بحسب السياق والجمهور.",
+      "usage_rule_en": "Introducing Islam and inviting to it with wisdom; the equivalent is chosen by context and audience.",
+      "discouraged_en": [],
+      "basis": "",
+      "approved_en": [
+        "Da‘wah",
+        "Invitation to Islam"
+      ],
+      "jamhara": {
+        "word_id": 4890,
+        "approved_en": [
+          "Invitation"
+        ],
+        "source_url": "https://islamic-content.com/dictionary/word/4890/en"
+      }
+    }
+  ]
+}

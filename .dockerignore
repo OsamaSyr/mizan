@@ -1,0 +1,34 @@
+# Keep the build context small and keep third-party text out of the image.
+# The image builds its own index with scripts/setup.sh.
+.git
+.venv
+venv
+**/__pycache__
+**/*.py[cod]
+.pytest_cache
+.DS_Store
+*.part
+
+# built or downloaded by setup inside the image
+data/raw
+data/corpus.sqlite
+data/corpus.sqlite-*
+
+# third-party published text (measurement only; never redistributed)
+data/real/raw
+data/real/corpus.jsonl
+data/real/negatives.jsonl
+data/real/rebuild_report.json
+tests/results_real.json
+
+# built inside the ML image, never copied from a laptop
+data/embeddings
+
+# local state and caches
+data/glossary/raw
+data/glossary/jamhara.jsonl
+data/glossary/parallel_definitions.jsonl
+data/review.sqlite
+data/review.sqlite-*
+results/**/cache
+results/quick

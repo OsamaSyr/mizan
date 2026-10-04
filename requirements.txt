@@ -1,0 +1,14 @@
+# MIZAN core: no third-party dependencies.
+#
+# Everything — the server (http.server), the index (sqlite3 with FTS5), the
+# scorer (difflib), setup (urllib, zipfile, hashlib) and the evaluation — runs
+# on the Python 3.11 standard library. There is nothing to `pip install`.
+#
+#     make setup     # download + verify sources, build data/corpus.sqlite
+#     make run       # http://127.0.0.1:8000
+#
+# Optional, never required:
+#   * requirements-ml.txt  — the semantic retrieval tier (BAAI/bge-m3). Without
+#     it MIZAN runs its deterministic lexical path unchanged and says so.
+#   * pytest              — `make test` uses it when present and falls back to
+#     each test file's own runner when it is not.

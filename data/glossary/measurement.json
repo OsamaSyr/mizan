@@ -1,0 +1,752 @@
+{
+  "glossary": {
+    "source": "jamhara+package",
+    "terms": 271
+  },
+  "real_corpus": {
+    "corpus": "data/real/corpus.jsonl",
+    "lang": "en",
+    "records": 130,
+    "per_quote": {
+      "unit": "quoted passage + context",
+      "units": 130,
+      "units_with_findings": 78,
+      "findings": 101,
+      "status": {
+        "APPROVED": 98,
+        "VARIANT": 1,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 2
+      },
+      "share": {
+        "APPROVED": 0.9703,
+        "VARIANT": 0.0099,
+        "MISSING": 0.0,
+        "NOT_IN_GLOSSARY": 0.0198
+      },
+      "by_term": {
+        "القرآن": {
+          "APPROVED": 55,
+          "VARIANT": 1,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "الإسلام": {
+          "APPROVED": 23,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "الحديث": {
+          "APPROVED": 3,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "الفطرة": {
+          "APPROVED": 2,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "الصحابة": {
+          "APPROVED": 2,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "المصحف": {
+          "APPROVED": 2,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "(transliteration outside glossary)": {
+          "APPROVED": 0,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 2
+        },
+        "المتواتر": {
+          "APPROVED": 2,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "المسجد الحرام": {
+          "APPROVED": 2,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "المسجد الأقصى": {
+          "APPROVED": 2,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "اللوح المحفوظ": {
+          "APPROVED": 1,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "الكعبة": {
+          "APPROVED": 1,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "الزكاة": {
+          "APPROVED": 1,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "رمضان": {
+          "APPROVED": 1,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "الشرك": {
+          "APPROVED": 1,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        }
+      }
+    },
+    "per_article": {
+      "unit": "article (distinct contexts)",
+      "units": 31,
+      "units_with_findings": 26,
+      "findings": 47,
+      "status": {
+        "APPROVED": 44,
+        "VARIANT": 1,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 2
+      },
+      "share": {
+        "APPROVED": 0.9362,
+        "VARIANT": 0.0213,
+        "MISSING": 0.0,
+        "NOT_IN_GLOSSARY": 0.0426
+      },
+      "by_term": {
+        "القرآن": {
+          "APPROVED": 19,
+          "VARIANT": 1,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "الإسلام": {
+          "APPROVED": 13,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "(transliteration outside glossary)": {
+          "APPROVED": 0,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 2
+        },
+        "الفطرة": {
+          "APPROVED": 1,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "الصحابة": {
+          "APPROVED": 1,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "المصحف": {
+          "APPROVED": 1,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "اللوح المحفوظ": {
+          "APPROVED": 1,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "الكعبة": {
+          "APPROVED": 1,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "الزكاة": {
+          "APPROVED": 1,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "رمضان": {
+          "APPROVED": 1,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "الشرك": {
+          "APPROVED": 1,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "الحديث": {
+          "APPROVED": 1,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "المتواتر": {
+          "APPROVED": 1,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "المسجد الحرام": {
+          "APPROVED": 1,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        },
+        "المسجد الأقصى": {
+          "APPROVED": 1,
+          "VARIANT": 0,
+          "MISSING": 0,
+          "NOT_IN_GLOSSARY": 0
+        }
+      }
+    }
+  },
+  "dictionary_parallel_definitions_calibration": {
+    "unit": "dictionary entry: Arabic definition x English definition",
+    "units": 246,
+    "units_with_findings": 144,
+    "findings": 236,
+    "status": {
+      "APPROVED": 180,
+      "VARIANT": 0,
+      "MISSING": 55,
+      "NOT_IN_GLOSSARY": 1
+    },
+    "share": {
+      "APPROVED": 0.7627,
+      "VARIANT": 0.0,
+      "MISSING": 0.2331,
+      "NOT_IN_GLOSSARY": 0.0042
+    },
+    "by_term": {
+      "الصلاة": {
+        "APPROVED": 20,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "النبي": {
+        "APPROVED": 13,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "القرآن": {
+        "APPROVED": 11,
+        "VARIANT": 0,
+        "MISSING": 2,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "العبادة": {
+        "APPROVED": 11,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الرسول": {
+        "APPROVED": 5,
+        "VARIANT": 0,
+        "MISSING": 3,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "المسلم": {
+        "APPROVED": 8,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الإسلام": {
+        "APPROVED": 6,
+        "VARIANT": 0,
+        "MISSING": 2,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "النية": {
+        "APPROVED": 7,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الحديث": {
+        "APPROVED": 5,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الصفات": {
+        "APPROVED": 4,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "السنة": {
+        "APPROVED": 4,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الكعبة": {
+        "APPROVED": 4,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "القيامة": {
+        "APPROVED": 0,
+        "VARIANT": 0,
+        "MISSING": 4,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الكفر": {
+        "APPROVED": 1,
+        "VARIANT": 0,
+        "MISSING": 3,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "المؤمن": {
+        "APPROVED": 1,
+        "VARIANT": 0,
+        "MISSING": 3,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الدعوة": {
+        "APPROVED": 0,
+        "VARIANT": 0,
+        "MISSING": 4,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الطاعة": {
+        "APPROVED": 3,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "النار": {
+        "APPROVED": 3,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الإيمان": {
+        "APPROVED": 0,
+        "VARIANT": 0,
+        "MISSING": 3,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "رمضان": {
+        "APPROVED": 3,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "المسجد": {
+        "APPROVED": 3,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الوتر": {
+        "APPROVED": 0,
+        "VARIANT": 0,
+        "MISSING": 3,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الحج": {
+        "APPROVED": 3,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "المعصية": {
+        "APPROVED": 0,
+        "VARIANT": 0,
+        "MISSING": 3,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الشرك": {
+        "APPROVED": 2,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الربوبية": {
+        "APPROVED": 1,
+        "VARIANT": 0,
+        "MISSING": 1,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الملائكة": {
+        "APPROVED": 2,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "التكبير": {
+        "APPROVED": 2,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "طواف": {
+        "APPROVED": 2,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الطلاق": {
+        "APPROVED": 2,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الصحابي": {
+        "APPROVED": 1,
+        "VARIANT": 0,
+        "MISSING": 1,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الحرام": {
+        "APPROVED": 1,
+        "VARIANT": 0,
+        "MISSING": 1,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الكافر": {
+        "APPROVED": 1,
+        "VARIANT": 0,
+        "MISSING": 1,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الدعاء": {
+        "APPROVED": 2,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الهداية": {
+        "APPROVED": 2,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "السجود": {
+        "APPROVED": 1,
+        "VARIANT": 0,
+        "MISSING": 1,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الركوع": {
+        "APPROVED": 2,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "السورة": {
+        "APPROVED": 2,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "العمرة": {
+        "APPROVED": 2,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "العيد": {
+        "APPROVED": 2,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      }
+    }
+  },
+  "approved_translations_calibration": {
+    "unit": "verse x approved translation",
+    "units": 93528,
+    "units_with_findings": 24265,
+    "findings": 32234,
+    "status": {
+      "APPROVED": 22749,
+      "VARIANT": 16,
+      "MISSING": 9302,
+      "NOT_IN_GLOSSARY": 167
+    },
+    "share": {
+      "APPROVED": 0.7057,
+      "VARIANT": 0.0005,
+      "MISSING": 0.2886,
+      "NOT_IN_GLOSSARY": 0.0052
+    },
+    "by_term": {
+      "المؤمن": {
+        "APPROVED": 2176,
+        "VARIANT": 0,
+        "MISSING": 764,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الرسول": {
+        "APPROVED": 2809,
+        "VARIANT": 0,
+        "MISSING": 56,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الكافر": {
+        "APPROVED": 234,
+        "VARIANT": 0,
+        "MISSING": 1730,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "النار": {
+        "APPROVED": 1760,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الجنة": {
+        "APPROVED": 82,
+        "VARIANT": 0,
+        "MISSING": 1208,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الصلاة": {
+        "APPROVED": 1008,
+        "VARIANT": 0,
+        "MISSING": 87,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الملائكة": {
+        "APPROVED": 1091,
+        "VARIANT": 0,
+        "MISSING": 4,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الإيمان": {
+        "APPROVED": 389,
+        "VARIANT": 0,
+        "MISSING": 676,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "القيامة": {
+        "APPROVED": 698,
+        "VARIANT": 0,
+        "MISSING": 352,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الآية": {
+        "APPROVED": 995,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الشيطان": {
+        "APPROVED": 811,
+        "VARIANT": 0,
+        "MISSING": 104,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "القرآن": {
+        "APPROVED": 837,
+        "VARIANT": 0,
+        "MISSING": 48,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "النبي": {
+        "APPROVED": 849,
+        "VARIANT": 0,
+        "MISSING": 21,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الكفر": {
+        "APPROVED": 280,
+        "VARIANT": 0,
+        "MISSING": 455,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "المشرك": {
+        "APPROVED": 223,
+        "VARIANT": 0,
+        "MISSING": 422,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الصراط": {
+        "APPROVED": 484,
+        "VARIANT": 0,
+        "MISSING": 116,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "المسلم": {
+        "APPROVED": 249,
+        "VARIANT": 0,
+        "MISSING": 321,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الزكاة": {
+        "APPROVED": 282,
+        "VARIANT": 0,
+        "MISSING": 198,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "أهل الكتاب": {
+        "APPROVED": 173,
+        "VARIANT": 0,
+        "MISSING": 292,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "المغفرة": {
+        "APPROVED": 381,
+        "VARIANT": 0,
+        "MISSING": 39,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "السحر": {
+        "APPROVED": 372,
+        "VARIANT": 0,
+        "MISSING": 33,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "اليوم الآخر": {
+        "APPROVED": 368,
+        "VARIANT": 0,
+        "MISSING": 22,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "العرش": {
+        "APPROVED": 386,
+        "VARIANT": 0,
+        "MISSING": 4,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "المنافق": {
+        "APPROVED": 367,
+        "VARIANT": 0,
+        "MISSING": 8,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الجن": {
+        "APPROVED": 323,
+        "VARIANT": 0,
+        "MISSING": 22,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الخوف": {
+        "APPROVED": 303,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الذكر": {
+        "APPROVED": 292,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الكذب": {
+        "APPROVED": 289,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الحكمة": {
+        "APPROVED": 245,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "التوراة": {
+        "APPROVED": 222,
+        "VARIANT": 0,
+        "MISSING": 18,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "المسجد الحرام": {
+        "APPROVED": 140,
+        "VARIANT": 0,
+        "MISSING": 85,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الدعاء": {
+        "APPROVED": 25,
+        "VARIANT": 0,
+        "MISSING": 200,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "التقوى": {
+        "APPROVED": 24,
+        "VARIANT": 0,
+        "MISSING": 201,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الفتنة": {
+        "APPROVED": 200,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الشفاعة": {
+        "APPROVED": 145,
+        "VARIANT": 0,
+        "MISSING": 35,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الإنجيل": {
+        "APPROVED": 177,
+        "VARIANT": 0,
+        "MISSING": 3,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الصبر": {
+        "APPROVED": 93,
+        "VARIANT": 0,
+        "MISSING": 72,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "المنكر": {
+        "APPROVED": 150,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "التنزيل": {
+        "APPROVED": 137,
+        "VARIANT": 0,
+        "MISSING": 0,
+        "NOT_IN_GLOSSARY": 0
+      },
+      "الموعظة": {
+        "APPROVED": 50,
+        "VARIANT": 0,
+        "MISSING": 85,
+        "NOT_IN_GLOSSARY": 0
+      }
+    },
+    "editions": 15
+  }
+}

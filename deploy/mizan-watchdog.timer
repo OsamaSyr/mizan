@@ -1,0 +1,11 @@
+# /etc/systemd/system/mizan-watchdog.timer  (installed by deploy/provision.sh)
+[Unit]
+Description=Run the MIZAN watchdog every minute
+
+[Timer]
+OnCalendar=*-*-* *:*:00
+AccuracySec=1s
+Persistent=false
+
+[Install]
+WantedBy=timers.target

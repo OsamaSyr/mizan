@@ -1,0 +1,9 @@
+# /etc/systemd/system/mizan-watchdog.service  (installed by deploy/provision.sh)
+[Unit]
+Description=MIZAN watchdog: restart a hung server, record AI-tier status
+After=mizan.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /opt/mizan/app/deploy/watchdog.sh
+TimeoutStartSec=240

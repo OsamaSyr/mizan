@@ -1,0 +1,4 @@
+# Adds ONNX Runtime to the measurement image (experiment only).
+#   docker build -f deploy/experiments/Dockerfile.bench-onnx -t mizan-bench-onnx deploy/experiments
+FROM mizan-bench
+RUN pip install --no-cache-dir onnx onnxruntime onnxscript

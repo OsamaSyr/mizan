@@ -1,0 +1,2367 @@
+{
+  "mizan_eval": 1,
+  "generated_at": "2026-10-04T10:00:29Z",
+  "command": ".venv/bin/python -m mizan.eval --suite all --runs 3 --update-readme --fresh",
+  "python": "3.11.0 CPython",
+  "platform": "Darwin arm64",
+  "runs": 3,
+  "seeds": [
+    20261001,
+    20261002,
+    20261003
+  ],
+  "quick": false,
+  "index": {
+    "source": "quranpedia.net",
+    "version": "2026-10-01",
+    "translations": 22,
+    "languages": {
+      "bn": 2,
+      "en": 15,
+      "hi": 1,
+      "tl": 2,
+      "ur": 2
+    },
+    "renderings": 137180,
+    "arabic_verses": 6236
+  },
+  "fingerprints": {
+    "index": "c5ce4090a69fb9439ac48edff9b2cd08784ee7268a984f64688f9a37b1952073",
+    "index_reference": "c5ce4090a69fb9439ac48edff9b2cd08784ee7268a984f64688f9a37b1952073",
+    "index_matches_reference": true,
+    "code": "684aeb0991d9bd0cea8d3a65cb53f2a76a5620ff9edb957935feefdfbdb28200",
+    "corpus": "e185c9b4a670fe52f121b5cc80f5df89f286f5b3be027ba4a331e2064a441dd9",
+    "corpus_reference": "e185c9b4a670fe52f121b5cc80f5df89f286f5b3be027ba4a331e2064a441dd9",
+    "corpus_matches_reference": true
+  },
+  "thresholds": {
+    "MATCH": 0.92,
+    "NEAR": 0.75
+  },
+  "seconds": 652.0,
+  "suites": {
+    "index": {
+      "status": "ok",
+      "deterministic": false,
+      "kind": "sampled — seed changes the sample",
+      "params": {
+        "n": 400,
+        "diag_n": 150
+      },
+      "seeds": [
+        20261001,
+        20261002,
+        20261003
+      ],
+      "seconds": [
+        38.1,
+        36.6,
+        37.0
+      ],
+      "metrics": {
+        "control.renderings": {
+          "mean": 8321,
+          "sd": 14.4222,
+          "min": 8305,
+          "max": 8333,
+          "values": [
+            8305,
+            8325,
+            8333
+          ]
+        },
+        "control.false_alarm_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "identity.cases": {
+          "mean": 8300.6667,
+          "sd": 14.5717,
+          "min": 8289,
+          "max": 8317,
+          "values": [
+            8289,
+            8317,
+            8296
+          ]
+        },
+        "identity.correct_edition_pct": {
+          "mean": 90.6833,
+          "sd": 0.0493,
+          "min": 90.65,
+          "max": 90.74,
+          "values": [
+            90.65,
+            90.66,
+            90.74
+          ]
+        },
+        "separation.mean_sim": {
+          "mean": 0.468,
+          "sd": 0.0069,
+          "min": 0.464,
+          "max": 0.476,
+          "values": [
+            0.464,
+            0.476,
+            0.464
+          ]
+        },
+        "separation.collisions_pct": {
+          "mean": 1.8,
+          "sd": 0.5292,
+          "min": 1.4,
+          "max": 2.4,
+          "values": [
+            1.4,
+            2.4,
+            1.6
+          ]
+        },
+        "rejection.cases": {
+          "mean": 301,
+          "sd": 8.544,
+          "min": 292,
+          "max": 309,
+          "values": [
+            302,
+            309,
+            292
+          ]
+        },
+        "rejection.recall_pct": {
+          "mean": 100.0,
+          "sd": 0.0,
+          "min": 100.0,
+          "max": 100.0,
+          "values": [
+            100.0,
+            100.0,
+            100.0
+          ]
+        },
+        "control.bn.false_alarm_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "control.en.false_alarm_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "control.tl.false_alarm_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "control.ur.false_alarm_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "identity.bn.correct_edition_pct": {
+          "mean": 100.0,
+          "sd": 0.0,
+          "min": 100.0,
+          "max": 100.0,
+          "values": [
+            100.0,
+            100.0,
+            100.0
+          ]
+        },
+        "identity.en.correct_edition_pct": {
+          "mean": 88.4533,
+          "sd": 0.0751,
+          "min": 88.38,
+          "max": 88.53,
+          "values": [
+            88.38,
+            88.45,
+            88.53
+          ]
+        },
+        "identity.tl.correct_edition_pct": {
+          "mean": 99.9133,
+          "sd": 0.0751,
+          "min": 99.87,
+          "max": 100.0,
+          "values": [
+            100.0,
+            99.87,
+            99.87
+          ]
+        },
+        "identity.ur.correct_edition_pct": {
+          "mean": 88.7167,
+          "sd": 0.1102,
+          "min": 88.61,
+          "max": 88.83,
+          "values": [
+            88.71,
+            88.61,
+            88.83
+          ]
+        },
+        "margin.bn.p95": {
+          "mean": 0.339,
+          "sd": 0.0096,
+          "min": 0.332,
+          "max": 0.35,
+          "values": [
+            0.35,
+            0.332,
+            0.335
+          ]
+        },
+        "margin.bn.max": {
+          "mean": 0.3953,
+          "sd": 0.0051,
+          "min": 0.391,
+          "max": 0.401,
+          "values": [
+            0.394,
+            0.391,
+            0.401
+          ]
+        },
+        "margin.bn.over_near_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "margin.en.p95": {
+          "mean": 0.2987,
+          "sd": 0.0076,
+          "min": 0.29,
+          "max": 0.304,
+          "values": [
+            0.304,
+            0.302,
+            0.29
+          ]
+        },
+        "margin.en.max": {
+          "mean": 0.3607,
+          "sd": 0.0337,
+          "min": 0.329,
+          "max": 0.396,
+          "values": [
+            0.329,
+            0.396,
+            0.357
+          ]
+        },
+        "margin.en.over_near_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "margin.hi.p95": {
+          "mean": 0.3717,
+          "sd": 0.0155,
+          "min": 0.356,
+          "max": 0.387,
+          "values": [
+            0.372,
+            0.356,
+            0.387
+          ]
+        },
+        "margin.hi.max": {
+          "mean": 0.5103,
+          "sd": 0.0331,
+          "min": 0.486,
+          "max": 0.548,
+          "values": [
+            0.548,
+            0.497,
+            0.486
+          ]
+        },
+        "margin.hi.over_near_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "margin.tl.p95": {
+          "mean": 0.292,
+          "sd": 0.0036,
+          "min": 0.288,
+          "max": 0.295,
+          "values": [
+            0.288,
+            0.293,
+            0.295
+          ]
+        },
+        "margin.tl.max": {
+          "mean": 0.345,
+          "sd": 0.0193,
+          "min": 0.328,
+          "max": 0.366,
+          "values": [
+            0.366,
+            0.341,
+            0.328
+          ]
+        },
+        "margin.tl.over_near_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "margin.ur.p95": {
+          "mean": 0.251,
+          "sd": 0.006,
+          "min": 0.245,
+          "max": 0.257,
+          "values": [
+            0.251,
+            0.245,
+            0.257
+          ]
+        },
+        "margin.ur.max": {
+          "mean": 0.3593,
+          "sd": 0.0374,
+          "min": 0.318,
+          "max": 0.391,
+          "values": [
+            0.369,
+            0.391,
+            0.318
+          ]
+        },
+        "margin.ur.over_near_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "ties.cases": {
+          "mean": 3119.3333,
+          "sd": 11.8462,
+          "min": 3112,
+          "max": 3133,
+          "values": [
+            3133,
+            3112,
+            3113
+          ]
+        },
+        "ties.wrong_edition_pct": {
+          "mean": 9.7567,
+          "sd": 0.4002,
+          "min": 9.35,
+          "max": 10.15,
+          "values": [
+            9.35,
+            10.15,
+            9.77
+          ]
+        },
+        "ties.tie_share_of_wrong_pct": {
+          "mean": 100.0,
+          "sd": 0.0,
+          "min": 100.0,
+          "max": 100.0,
+          "values": [
+            100.0,
+            100.0,
+            100.0
+          ]
+        },
+        "footnoted.1947.verse_part_unattributed_pct": {
+          "mean": 1.7767,
+          "sd": 1.3851,
+          "min": 0.67,
+          "max": 3.33,
+          "values": [
+            0.67,
+            3.33,
+            1.33
+          ]
+        },
+        "footnoted.1948.verse_part_unattributed_pct": {
+          "mean": 7.3333,
+          "sd": 1.767,
+          "min": 5.33,
+          "max": 8.67,
+          "values": [
+            5.33,
+            8.67,
+            8.0
+          ]
+        },
+        "footnoted.1966.verse_part_unattributed_pct": {
+          "mean": 0.4467,
+          "sd": 0.3868,
+          "min": 0.0,
+          "max": 0.67,
+          "values": [
+            0.67,
+            0.67,
+            0.0
+          ]
+        },
+        "footnoted.1967.verse_part_unattributed_pct": {
+          "mean": 97.1133,
+          "sd": 1.3891,
+          "min": 96.0,
+          "max": 98.67,
+          "values": [
+            96.67,
+            98.67,
+            96.0
+          ]
+        },
+        "footnoted.1986.verse_part_unattributed_pct": {
+          "mean": 67.3333,
+          "sd": 7.0528,
+          "min": 62.0,
+          "max": 75.33,
+          "values": [
+            75.33,
+            64.67,
+            62.0
+          ]
+        }
+      },
+      "detail": {
+        "confused_pairs": [
+          {
+            "true": "Dr. Mustafa Khattab - English translation",
+            "true_id": 13662,
+            "predicted": "Dr. Mustafa Khattab, The Clear Quran - English translation",
+            "predicted_id": 13661,
+            "n": 122,
+            "exact_ties": 122
+          },
+          {
+            "true": "Sahih International - English translation",
+            "true_id": 13638,
+            "predicted": "الترجمة الإنجليزية - صحيح انترناشونال",
+            "predicted_id": 1947,
+            "n": 66,
+            "exact_ties": 66
+          },
+          {
+            "true": "Muhsin Khan - English translation",
+            "true_id": 13603,
+            "predicted": "الترجمة الإنجليزية",
+            "predicted_id": 1948,
+            "n": 48,
+            "exact_ties": 48
+          },
+          {
+            "true": "محمد جوناگڑھی - Urdu translation",
+            "true_id": 13625,
+            "predicted": "الترجمة الأردية",
+            "predicted_id": 1966,
+            "n": 39,
+            "exact_ties": 39
+          },
+          {
+            "true": "الترجمة الإنجليزية",
+            "true_id": 1948,
+            "predicted": "الترجمة الإنجليزية - صحيح انترناشونال",
+            "predicted_id": 1947,
+            "n": 2,
+            "exact_ties": 2
+          },
+          {
+            "true": "Muhsin Khan - English translation",
+            "true_id": 13603,
+            "predicted": "الترجمة الإنجليزية - صحيح انترناشونال",
+            "predicted_id": 1947,
+            "n": 2,
+            "exact_ties": 2
+          }
+        ],
+        "margin_note": "best score a DIFFERENT verse's approved text reaches against all approved renderings of the target verse; NEAR threshold is 0.75",
+        "footnoted_editions": [
+          {
+            "book_id": 1947,
+            "lang": "en",
+            "title": "الترجمة الإنجليزية - صحيح انترناشونال",
+            "verses_with_commentary": 1612,
+            "sampled": 150,
+            "attributed_to_itself": 13,
+            "attributed_to_another_edition": 136,
+            "unattributed": 1,
+            "editions_in_language": 15
+          },
+          {
+            "book_id": 1948,
+            "lang": "en",
+            "title": "الترجمة الإنجليزية",
+            "verses_with_commentary": 718,
+            "sampled": 150,
+            "attributed_to_itself": 17,
+            "attributed_to_another_edition": 125,
+            "unattributed": 8,
+            "editions_in_language": 15
+          },
+          {
+            "book_id": 1966,
+            "lang": "ur",
+            "title": "الترجمة الأردية",
+            "verses_with_commentary": 4803,
+            "sampled": 150,
+            "attributed_to_itself": 0,
+            "attributed_to_another_edition": 149,
+            "unattributed": 1,
+            "editions_in_language": 2
+          },
+          {
+            "book_id": 1967,
+            "lang": "bn",
+            "title": "الترجمة البنغالية",
+            "verses_with_commentary": 3592,
+            "sampled": 150,
+            "attributed_to_itself": 4,
+            "attributed_to_another_edition": 1,
+            "unattributed": 145,
+            "editions_in_language": 2
+          },
+          {
+            "book_id": 1986,
+            "lang": "hi",
+            "title": "الترجمة الهندية",
+            "verses_with_commentary": 2107,
+            "sampled": 150,
+            "attributed_to_itself": 37,
+            "attributed_to_another_edition": 0,
+            "unattributed": 113,
+            "editions_in_language": 1
+          }
+        ],
+        "thresholds": {
+          "MATCH": 0.92,
+          "NEAR": 0.75
+        }
+      }
+    },
+    "real": {
+      "status": "ok",
+      "deterministic": true,
+      "kind": "deterministic",
+      "params": {
+        "negatives": 120,
+        "limit": 0
+      },
+      "seeds": [
+        20261001,
+        20261002,
+        20261003
+      ],
+      "seconds": [
+        68.9,
+        66.7,
+        67.3
+      ],
+      "metrics": {
+        "quotations": {
+          "mean": 473,
+          "sd": 0.0,
+          "min": 473,
+          "max": 473,
+          "values": [
+            473,
+            473,
+            473
+          ]
+        },
+        "stripped.detection_pct": {
+          "mean": 22.2,
+          "sd": 0.0,
+          "min": 22.2,
+          "max": 22.2,
+          "values": [
+            22.2,
+            22.2,
+            22.2
+          ]
+        },
+        "stripped.ref_accuracy_pct": {
+          "mean": 75.0,
+          "sd": 0.0,
+          "min": 75.0,
+          "max": 75.0,
+          "values": [
+            75.0,
+            75.0,
+            75.0
+          ]
+        },
+        "stripped.attributed_pct": {
+          "mean": 2.1,
+          "sd": 0.0,
+          "min": 2.1,
+          "max": 2.1,
+          "values": [
+            2.1,
+            2.1,
+            2.1
+          ]
+        },
+        "published.detection_pct": {
+          "mean": 50.1,
+          "sd": 0.0,
+          "min": 50.1,
+          "max": 50.1,
+          "values": [
+            50.1,
+            50.1,
+            50.1
+          ]
+        },
+        "published.ref_accuracy_pct": {
+          "mean": 97.1,
+          "sd": 0.0,
+          "min": 97.1,
+          "max": 97.1,
+          "values": [
+            97.1,
+            97.1,
+            97.1
+          ]
+        },
+        "published.with_printed_ref": {
+          "mean": 204,
+          "sd": 0.0,
+          "min": 204,
+          "max": 204,
+          "values": [
+            204,
+            204,
+            204
+          ]
+        },
+        "published.attributed_pct": {
+          "mean": 3.0,
+          "sd": 0.0,
+          "min": 3.0,
+          "max": 3.0,
+          "values": [
+            3.0,
+            3.0,
+            3.0
+          ]
+        },
+        "published.MATCH_pct": {
+          "mean": 3.0,
+          "sd": 0.0,
+          "min": 3.0,
+          "max": 3.0,
+          "values": [
+            3.0,
+            3.0,
+            3.0
+          ]
+        },
+        "published.NEAR_pct": {
+          "mean": 8.7,
+          "sd": 0.0,
+          "min": 8.7,
+          "max": 8.7,
+          "values": [
+            8.7,
+            8.7,
+            8.7
+          ]
+        },
+        "published.UNATTRIBUTED_pct": {
+          "mean": 38.5,
+          "sd": 0.0,
+          "min": 38.5,
+          "max": 38.5,
+          "values": [
+            38.5,
+            38.5,
+            38.5
+          ]
+        },
+        "published.NO_APPROVED_TRANSLATION_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "published.UNRESOLVED_pct": {
+          "mean": 49.9,
+          "sd": 0.0,
+          "min": 49.9,
+          "max": 49.9,
+          "values": [
+            49.9,
+            49.9,
+            49.9
+          ]
+        },
+        "published.bn.n": {
+          "mean": 38,
+          "sd": 0.0,
+          "min": 38,
+          "max": 38,
+          "values": [
+            38,
+            38,
+            38
+          ]
+        },
+        "published.bn.detection_pct": {
+          "mean": 84.2,
+          "sd": 0.0,
+          "min": 84.2,
+          "max": 84.2,
+          "values": [
+            84.2,
+            84.2,
+            84.2
+          ]
+        },
+        "published.bn.ref_accuracy_pct": {
+          "mean": 100.0,
+          "sd": 0.0,
+          "min": 100.0,
+          "max": 100.0,
+          "values": [
+            100.0,
+            100.0,
+            100.0
+          ]
+        },
+        "published.bn.attributed_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "published.en.n": {
+          "mean": 130,
+          "sd": 0.0,
+          "min": 130,
+          "max": 130,
+          "values": [
+            130,
+            130,
+            130
+          ]
+        },
+        "published.en.detection_pct": {
+          "mean": 63.8,
+          "sd": 0.0,
+          "min": 63.8,
+          "max": 63.8,
+          "values": [
+            63.8,
+            63.8,
+            63.8
+          ]
+        },
+        "published.en.ref_accuracy_pct": {
+          "mean": 94.0,
+          "sd": 0.0,
+          "min": 94.0,
+          "max": 94.0,
+          "values": [
+            94.0,
+            94.0,
+            94.0
+          ]
+        },
+        "published.en.attributed_pct": {
+          "mean": 10.0,
+          "sd": 0.0,
+          "min": 10.0,
+          "max": 10.0,
+          "values": [
+            10.0,
+            10.0,
+            10.0
+          ]
+        },
+        "published.hi.n": {
+          "mean": 94,
+          "sd": 0.0,
+          "min": 94,
+          "max": 94,
+          "values": [
+            94,
+            94,
+            94
+          ]
+        },
+        "published.hi.detection_pct": {
+          "mean": 55.3,
+          "sd": 0.0,
+          "min": 55.3,
+          "max": 55.3,
+          "values": [
+            55.3,
+            55.3,
+            55.3
+          ]
+        },
+        "published.hi.ref_accuracy_pct": {
+          "mean": 100.0,
+          "sd": 0.0,
+          "min": 100.0,
+          "max": 100.0,
+          "values": [
+            100.0,
+            100.0,
+            100.0
+          ]
+        },
+        "published.hi.attributed_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "published.tl.n": {
+          "mean": 85,
+          "sd": 0.0,
+          "min": 85,
+          "max": 85,
+          "values": [
+            85,
+            85,
+            85
+          ]
+        },
+        "published.tl.detection_pct": {
+          "mean": 44.7,
+          "sd": 0.0,
+          "min": 44.7,
+          "max": 44.7,
+          "values": [
+            44.7,
+            44.7,
+            44.7
+          ]
+        },
+        "published.tl.ref_accuracy_pct": {
+          "mean": 97.3,
+          "sd": 0.0,
+          "min": 97.3,
+          "max": 97.3,
+          "values": [
+            97.3,
+            97.3,
+            97.3
+          ]
+        },
+        "published.tl.attributed_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "published.ur.n": {
+          "mean": 126,
+          "sd": 0.0,
+          "min": 126,
+          "max": 126,
+          "values": [
+            126,
+            126,
+            126
+          ]
+        },
+        "published.ur.detection_pct": {
+          "mean": 25.4,
+          "sd": 0.0,
+          "min": 25.4,
+          "max": 25.4,
+          "values": [
+            25.4,
+            25.4,
+            25.4
+          ]
+        },
+        "published.ur.attributed_pct": {
+          "mean": 0.8,
+          "sd": 0.0,
+          "min": 0.8,
+          "max": 0.8,
+          "values": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        },
+        "tier_a.precision_pct": {
+          "mean": 100.0,
+          "sd": 0.0,
+          "min": 100.0,
+          "max": 100.0,
+          "values": [
+            100.0,
+            100.0,
+            100.0
+          ]
+        },
+        "tier_a.survival_pct": {
+          "mean": 76.7,
+          "sd": 0.0,
+          "min": 76.7,
+          "max": 76.7,
+          "values": [
+            76.7,
+            76.7,
+            76.7
+          ]
+        },
+        "probe120.paragraphs": {
+          "mean": 120,
+          "sd": 0.0,
+          "min": 120,
+          "max": 120,
+          "values": [
+            120,
+            120,
+            120
+          ]
+        },
+        "probe120.fp_rate_pct": {
+          "mean": 3.3,
+          "sd": 0.0,
+          "min": 3.3,
+          "max": 3.3,
+          "values": [
+            3.3,
+            3.3,
+            3.3
+          ]
+        },
+        "probe120.false_attribution_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "latency.quote_mean_ms": {
+          "mean": 38.7667,
+          "sd": 0.4041,
+          "min": 38.4,
+          "max": 39.2,
+          "values": [
+            38.4,
+            38.7,
+            39.2
+          ]
+        },
+        "latency.quote_p95_ms": {
+          "mean": 149.7,
+          "sd": 2.2913,
+          "min": 147.2,
+          "max": 151.7,
+          "values": [
+            151.7,
+            147.2,
+            150.2
+          ]
+        },
+        "latency.document_mean_ms": {
+          "mean": 1473.7333,
+          "sd": 2.0744,
+          "min": 1471.5,
+          "max": 1475.6,
+          "values": [
+            1474.1,
+            1471.5,
+            1475.6
+          ]
+        }
+      },
+      "detail": {
+        "corpus": {
+          "quotations": 473,
+          "negative_paragraphs": 120,
+          "by_language": {
+            "bn": 38,
+            "en": 130,
+            "hi": 94,
+            "tl": 85,
+            "ur": 126
+          },
+          "by_host": {
+            "islamqa.info": 173,
+            "www.islamreligion.com": 300
+          },
+          "retrieved_at": "2026-10-02T16:36:13Z"
+        },
+        "caveats": [
+          "UNATTRIBUTED means the rendering matches none of the approved translations in this index. It is not a claim that the text is wrong, and a narrow index will produce more of them.",
+          "These numbers describe MIZAN's behaviour on this corpus. They say nothing about how often publishers misquote; that was not measured and this corpus could not support such a claim.",
+          "Ground truth for reference accuracy is the publisher's own printed citation, not an independent adjudication.",
+          "The corpus is drawn from a small number of hosts and is not a random sample of da'wah publishing."
+        ],
+        "detection_path": "deterministic (MIZAN_SEMANTIC=0)",
+        "harness_output": "results/cache/real.run0.c16be56c8a11.harness.json"
+      }
+    },
+    "fp": {
+      "status": "ok",
+      "deterministic": true,
+      "kind": "deterministic",
+      "params": {
+        "limit": 0
+      },
+      "seeds": [
+        20261001,
+        20261002,
+        20261003
+      ],
+      "seconds": [
+        32.8,
+        32.8,
+        32.6
+      ],
+      "metrics": {
+        "paragraphs": {
+          "mean": 560,
+          "sd": 0.0,
+          "min": 560,
+          "max": 560,
+          "values": [
+            560,
+            560,
+            560
+          ]
+        },
+        "fp_rate_pct": {
+          "mean": 2.1,
+          "sd": 0.0,
+          "min": 2.1,
+          "max": 2.1,
+          "values": [
+            2.1,
+            2.1,
+            2.1
+          ]
+        },
+        "false_attribution_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "false_attributions": {
+          "mean": 0,
+          "sd": 0.0,
+          "min": 0,
+          "max": 0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "spurious_referral_per_100": {
+          "mean": 2.32,
+          "sd": 0.0,
+          "min": 2.32,
+          "max": 2.32,
+          "values": [
+            2.32,
+            2.32,
+            2.32
+          ]
+        },
+        "latency_mean_ms": {
+          "mean": 58.3,
+          "sd": 0.2,
+          "min": 58.1,
+          "max": 58.5,
+          "values": [
+            58.3,
+            58.5,
+            58.1
+          ]
+        },
+        "en.paragraphs": {
+          "mean": 220,
+          "sd": 0.0,
+          "min": 220,
+          "max": 220,
+          "values": [
+            220,
+            220,
+            220
+          ]
+        },
+        "en.fp_rate_pct": {
+          "mean": 2.3,
+          "sd": 0.0,
+          "min": 2.3,
+          "max": 2.3,
+          "values": [
+            2.3,
+            2.3,
+            2.3
+          ]
+        },
+        "hi.paragraphs": {
+          "mean": 173,
+          "sd": 0.0,
+          "min": 173,
+          "max": 173,
+          "values": [
+            173,
+            173,
+            173
+          ]
+        },
+        "hi.fp_rate_pct": {
+          "mean": 3.5,
+          "sd": 0.0,
+          "min": 3.5,
+          "max": 3.5,
+          "values": [
+            3.5,
+            3.5,
+            3.5
+          ]
+        },
+        "tl.paragraphs": {
+          "mean": 167,
+          "sd": 0.0,
+          "min": 167,
+          "max": 167,
+          "values": [
+            167,
+            167,
+            167
+          ]
+        },
+        "tl.fp_rate_pct": {
+          "mean": 0.6,
+          "sd": 0.0,
+          "min": 0.6,
+          "max": 0.6,
+          "values": [
+            0.6,
+            0.6,
+            0.6
+          ]
+        }
+      },
+      "detail": {
+        "false_attribution_examples": [],
+        "spurious_span_widths": {
+          "min": 6,
+          "median": 12,
+          "max": 22,
+          "at_or_below_8_words": 4,
+          "total": 13
+        }
+      }
+    },
+    "clarity": {
+      "status": "ok",
+      "deterministic": true,
+      "kind": "deterministic",
+      "params": {},
+      "seeds": [
+        20261001,
+        20261002,
+        20261003
+      ],
+      "seconds": [
+        5.9,
+        0.3,
+        0.3
+      ],
+      "metrics": {
+        "text.paragraphs": {
+          "mean": 213,
+          "sd": 0.0,
+          "min": 213,
+          "max": 213,
+          "values": [
+            213,
+            213,
+            213
+          ]
+        },
+        "text.words": {
+          "mean": 8195,
+          "sd": 0.0,
+          "min": 8195,
+          "max": 8195,
+          "values": [
+            8195,
+            8195,
+            8195
+          ]
+        },
+        "curious.prose_sentences": {
+          "mean": 333,
+          "sd": 0.0,
+          "min": 333,
+          "max": 333,
+          "values": [
+            333,
+            333,
+            333
+          ]
+        },
+        "curious.refused": {
+          "mean": 272,
+          "sd": 0.0,
+          "min": 272,
+          "max": 272,
+          "values": [
+            272,
+            272,
+            272
+          ]
+        },
+        "curious.refusal_rate_pct": {
+          "mean": 81.68,
+          "sd": 0.0,
+          "min": 81.68,
+          "max": 81.68,
+          "values": [
+            81.68,
+            81.68,
+            81.68
+          ]
+        },
+        "curious.adapted": {
+          "mean": 7,
+          "sd": 0.0,
+          "min": 7,
+          "max": 7,
+          "values": [
+            7,
+            7,
+            7
+          ]
+        },
+        "curious.flesch_before": {
+          "mean": 52.4,
+          "sd": 0.0,
+          "min": 52.4,
+          "max": 52.4,
+          "values": [
+            52.4,
+            52.4,
+            52.4
+          ]
+        },
+        "curious.flesch_after": {
+          "mean": 52.9,
+          "sd": 0.0,
+          "min": 52.9,
+          "max": 52.9,
+          "values": [
+            52.9,
+            52.9,
+            52.9
+          ]
+        },
+        "curious.byte_exact": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "new_muslim.prose_sentences": {
+          "mean": 333,
+          "sd": 0.0,
+          "min": 333,
+          "max": 333,
+          "values": [
+            333,
+            333,
+            333
+          ]
+        },
+        "new_muslim.refused": {
+          "mean": 272,
+          "sd": 0.0,
+          "min": 272,
+          "max": 272,
+          "values": [
+            272,
+            272,
+            272
+          ]
+        },
+        "new_muslim.refusal_rate_pct": {
+          "mean": 81.68,
+          "sd": 0.0,
+          "min": 81.68,
+          "max": 81.68,
+          "values": [
+            81.68,
+            81.68,
+            81.68
+          ]
+        },
+        "new_muslim.adapted": {
+          "mean": 3,
+          "sd": 0.0,
+          "min": 3,
+          "max": 3,
+          "values": [
+            3,
+            3,
+            3
+          ]
+        },
+        "new_muslim.flesch_before": {
+          "mean": 52.4,
+          "sd": 0.0,
+          "min": 52.4,
+          "max": 52.4,
+          "values": [
+            52.4,
+            52.4,
+            52.4
+          ]
+        },
+        "new_muslim.flesch_after": {
+          "mean": 52.6,
+          "sd": 0.0,
+          "min": 52.6,
+          "max": 52.6,
+          "values": [
+            52.6,
+            52.6,
+            52.6
+          ]
+        },
+        "new_muslim.byte_exact": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "practising.prose_sentences": {
+          "mean": 333,
+          "sd": 0.0,
+          "min": 333,
+          "max": 333,
+          "values": [
+            333,
+            333,
+            333
+          ]
+        },
+        "practising.refused": {
+          "mean": 272,
+          "sd": 0.0,
+          "min": 272,
+          "max": 272,
+          "values": [
+            272,
+            272,
+            272
+          ]
+        },
+        "practising.refusal_rate_pct": {
+          "mean": 81.68,
+          "sd": 0.0,
+          "min": 81.68,
+          "max": 81.68,
+          "values": [
+            81.68,
+            81.68,
+            81.68
+          ]
+        },
+        "practising.adapted": {
+          "mean": 3,
+          "sd": 0.0,
+          "min": 3,
+          "max": 3,
+          "values": [
+            3,
+            3,
+            3
+          ]
+        },
+        "practising.flesch_before": {
+          "mean": 52.4,
+          "sd": 0.0,
+          "min": 52.4,
+          "max": 52.4,
+          "values": [
+            52.4,
+            52.4,
+            52.4
+          ]
+        },
+        "practising.flesch_after": {
+          "mean": 52.6,
+          "sd": 0.0,
+          "min": 52.6,
+          "max": 52.6,
+          "values": [
+            52.6,
+            52.6,
+            52.6
+          ]
+        },
+        "practising.byte_exact": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "daee.prose_sentences": {
+          "mean": 333,
+          "sd": 0.0,
+          "min": 333,
+          "max": 333,
+          "values": [
+            333,
+            333,
+            333
+          ]
+        },
+        "daee.refused": {
+          "mean": 272,
+          "sd": 0.0,
+          "min": 272,
+          "max": 272,
+          "values": [
+            272,
+            272,
+            272
+          ]
+        },
+        "daee.refusal_rate_pct": {
+          "mean": 81.68,
+          "sd": 0.0,
+          "min": 81.68,
+          "max": 81.68,
+          "values": [
+            81.68,
+            81.68,
+            81.68
+          ]
+        },
+        "daee.adapted": {
+          "mean": 2,
+          "sd": 0.0,
+          "min": 2,
+          "max": 2,
+          "values": [
+            2,
+            2,
+            2
+          ]
+        },
+        "daee.flesch_before": {
+          "mean": 52.4,
+          "sd": 0.0,
+          "min": 52.4,
+          "max": 52.4,
+          "values": [
+            52.4,
+            52.4,
+            52.4
+          ]
+        },
+        "daee.flesch_after": {
+          "mean": 52.5,
+          "sd": 0.0,
+          "min": 52.5,
+          "max": 52.5,
+          "values": [
+            52.5,
+            52.5,
+            52.5
+          ]
+        },
+        "daee.byte_exact": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "min": 1.0,
+          "max": 1.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "detail": {
+        "refusal_counts": {
+          "curious": {
+            "CREED": 230,
+            "REFERENCE": 78,
+            "SCRIPTURE": 64,
+            "SCRIPTURE_LIKE": 51,
+            "NORMATIVE": 41,
+            "CONDITIONAL": 21,
+            "IMPLICIT_OBLIGATION": 11,
+            "PREFERENCE": 8,
+            "TOO_SHORT": 4
+          },
+          "new_muslim": {
+            "CREED": 230,
+            "REFERENCE": 78,
+            "SCRIPTURE": 64,
+            "SCRIPTURE_LIKE": 51,
+            "NORMATIVE": 41,
+            "CONDITIONAL": 21,
+            "IMPLICIT_OBLIGATION": 11,
+            "PREFERENCE": 8,
+            "TOO_SHORT": 4
+          },
+          "practising": {
+            "CREED": 230,
+            "REFERENCE": 78,
+            "SCRIPTURE": 64,
+            "SCRIPTURE_LIKE": 51,
+            "NORMATIVE": 41,
+            "CONDITIONAL": 21,
+            "IMPLICIT_OBLIGATION": 11,
+            "PREFERENCE": 8,
+            "TOO_SHORT": 4
+          },
+          "daee": {
+            "CREED": 230,
+            "REFERENCE": 78,
+            "SCRIPTURE": 64,
+            "SCRIPTURE_LIKE": 51,
+            "NORMATIVE": 41,
+            "CONDITIONAL": 21,
+            "IMPLICIT_OBLIGATION": 11,
+            "PREFERENCE": 8,
+            "TOO_SHORT": 4
+          }
+        },
+        "method": "The measured text: every distinct English context paragraph around a collected quotation, in corpus order, joined by blank lines. This is the publisher's own prose, not ours."
+      }
+    },
+    "terms": {
+      "status": "ok",
+      "deterministic": true,
+      "kind": "deterministic",
+      "params": {},
+      "seeds": [
+        20261001,
+        20261002,
+        20261003
+      ],
+      "seconds": [
+        10.0,
+        9.9,
+        9.8
+      ],
+      "metrics": {
+        "glossary.terms": {
+          "mean": 271,
+          "sd": 0.0,
+          "min": 271,
+          "max": 271,
+          "values": [
+            271,
+            271,
+            271
+          ]
+        },
+        "real.per_quote.units": {
+          "mean": 130,
+          "sd": 0.0,
+          "min": 130,
+          "max": 130,
+          "values": [
+            130,
+            130,
+            130
+          ]
+        },
+        "real.per_quote.units_with_findings": {
+          "mean": 77,
+          "sd": 0.0,
+          "min": 77,
+          "max": 77,
+          "values": [
+            77,
+            77,
+            77
+          ]
+        },
+        "real.per_quote.findings": {
+          "mean": 99,
+          "sd": 0.0,
+          "min": 99,
+          "max": 99,
+          "values": [
+            99,
+            99,
+            99
+          ]
+        },
+        "real.per_quote.APPROVED_pct": {
+          "mean": 98.99,
+          "sd": 0.0,
+          "min": 98.99,
+          "max": 98.99,
+          "values": [
+            98.99,
+            98.99,
+            98.99
+          ]
+        },
+        "real.per_quote.VARIANT_pct": {
+          "mean": 1.01,
+          "sd": 0.0,
+          "min": 1.01,
+          "max": 1.01,
+          "values": [
+            1.01,
+            1.01,
+            1.01
+          ]
+        },
+        "real.per_quote.MISSING_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "real.per_quote.NOT_IN_GLOSSARY_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "real.per_article.units": {
+          "mean": 31,
+          "sd": 0.0,
+          "min": 31,
+          "max": 31,
+          "values": [
+            31,
+            31,
+            31
+          ]
+        },
+        "real.per_article.units_with_findings": {
+          "mean": 25,
+          "sd": 0.0,
+          "min": 25,
+          "max": 25,
+          "values": [
+            25,
+            25,
+            25
+          ]
+        },
+        "real.per_article.findings": {
+          "mean": 45,
+          "sd": 0.0,
+          "min": 45,
+          "max": 45,
+          "values": [
+            45,
+            45,
+            45
+          ]
+        },
+        "real.per_article.APPROVED_pct": {
+          "mean": 97.78,
+          "sd": 0.0,
+          "min": 97.78,
+          "max": 97.78,
+          "values": [
+            97.78,
+            97.78,
+            97.78
+          ]
+        },
+        "real.per_article.VARIANT_pct": {
+          "mean": 2.22,
+          "sd": 0.0,
+          "min": 2.22,
+          "max": 2.22,
+          "values": [
+            2.22,
+            2.22,
+            2.22
+          ]
+        },
+        "real.per_article.MISSING_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "real.per_article.NOT_IN_GLOSSARY_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "calib.dictionary_definitions.units": {
+          "mean": 246,
+          "sd": 0.0,
+          "min": 246,
+          "max": 246,
+          "values": [
+            246,
+            246,
+            246
+          ]
+        },
+        "calib.dictionary_definitions.units_with_findings": {
+          "mean": 144,
+          "sd": 0.0,
+          "min": 144,
+          "max": 144,
+          "values": [
+            144,
+            144,
+            144
+          ]
+        },
+        "calib.dictionary_definitions.findings": {
+          "mean": 236,
+          "sd": 0.0,
+          "min": 236,
+          "max": 236,
+          "values": [
+            236,
+            236,
+            236
+          ]
+        },
+        "calib.dictionary_definitions.APPROVED_pct": {
+          "mean": 75.85,
+          "sd": 0.0,
+          "min": 75.85,
+          "max": 75.85,
+          "values": [
+            75.85,
+            75.85,
+            75.85
+          ]
+        },
+        "calib.dictionary_definitions.VARIANT_pct": {
+          "mean": 0.42,
+          "sd": 0.0,
+          "min": 0.42,
+          "max": 0.42,
+          "values": [
+            0.42,
+            0.42,
+            0.42
+          ]
+        },
+        "calib.dictionary_definitions.MISSING_pct": {
+          "mean": 23.31,
+          "sd": 0.0,
+          "min": 23.31,
+          "max": 23.31,
+          "values": [
+            23.31,
+            23.31,
+            23.31
+          ]
+        },
+        "calib.dictionary_definitions.NOT_IN_GLOSSARY_pct": {
+          "mean": 0.42,
+          "sd": 0.0,
+          "min": 0.42,
+          "max": 0.42,
+          "values": [
+            0.42,
+            0.42,
+            0.42
+          ]
+        },
+        "calib.approved_translations.units": {
+          "mean": 93528,
+          "sd": 0.0,
+          "min": 93528,
+          "max": 93528,
+          "values": [
+            93528,
+            93528,
+            93528
+          ]
+        },
+        "calib.approved_translations.units_with_findings": {
+          "mean": 24265,
+          "sd": 0.0,
+          "min": 24265,
+          "max": 24265,
+          "values": [
+            24265,
+            24265,
+            24265
+          ]
+        },
+        "calib.approved_translations.findings": {
+          "mean": 32234,
+          "sd": 0.0,
+          "min": 32234,
+          "max": 32234,
+          "values": [
+            32234,
+            32234,
+            32234
+          ]
+        },
+        "calib.approved_translations.APPROVED_pct": {
+          "mean": 70.57,
+          "sd": 0.0,
+          "min": 70.57,
+          "max": 70.57,
+          "values": [
+            70.57,
+            70.57,
+            70.57
+          ]
+        },
+        "calib.approved_translations.VARIANT_pct": {
+          "mean": 0.05,
+          "sd": 0.0,
+          "min": 0.05,
+          "max": 0.05,
+          "values": [
+            0.05,
+            0.05,
+            0.05
+          ]
+        },
+        "calib.approved_translations.MISSING_pct": {
+          "mean": 28.86,
+          "sd": 0.0,
+          "min": 28.86,
+          "max": 28.86,
+          "values": [
+            28.86,
+            28.86,
+            28.86
+          ]
+        },
+        "calib.approved_translations.NOT_IN_GLOSSARY_pct": {
+          "mean": 0.52,
+          "sd": 0.0,
+          "min": 0.52,
+          "max": 0.52,
+          "values": [
+            0.52,
+            0.52,
+            0.52
+          ]
+        }
+      },
+      "detail": {
+        "glossary": {
+          "source": "jamhara+package",
+          "terms": 271
+        }
+      }
+    },
+    "semantic": {
+      "status": "ok",
+      "deterministic": false,
+      "kind": "model-dependent (pinned revision; scores rounded to 4 decimals)",
+      "params": {
+        "limit": 0
+      },
+      "seeds": [
+        20261001
+      ],
+      "seconds": [
+        202.4
+      ],
+      "metrics": {
+        "lexical.stripped.detection_pct": {
+          "mean": 22.2,
+          "sd": 0.0,
+          "min": 22.2,
+          "max": 22.2,
+          "values": [
+            22.2
+          ]
+        },
+        "lexical.stripped.ref_accuracy_pct": {
+          "mean": 75.0,
+          "sd": 0.0,
+          "min": 75.0,
+          "max": 75.0,
+          "values": [
+            75.0
+          ]
+        },
+        "lexical.stripped.attributed_pct": {
+          "mean": 2.1,
+          "sd": 0.0,
+          "min": 2.1,
+          "max": 2.1,
+          "values": [
+            2.1
+          ]
+        },
+        "lexical.stripped.UNATTRIBUTED_pct": {
+          "mean": 10.6,
+          "sd": 0.0,
+          "min": 10.6,
+          "max": 10.6,
+          "values": [
+            10.6
+          ]
+        },
+        "lexical.published.detection_pct": {
+          "mean": 50.1,
+          "sd": 0.0,
+          "min": 50.1,
+          "max": 50.1,
+          "values": [
+            50.1
+          ]
+        },
+        "lexical.published.ref_accuracy_pct": {
+          "mean": 97.1,
+          "sd": 0.0,
+          "min": 97.1,
+          "max": 97.1,
+          "values": [
+            97.1
+          ]
+        },
+        "lexical.published.attributed_pct": {
+          "mean": 3.0,
+          "sd": 0.0,
+          "min": 3.0,
+          "max": 3.0,
+          "values": [
+            3.0
+          ]
+        },
+        "lexical.published.UNATTRIBUTED_pct": {
+          "mean": 38.5,
+          "sd": 0.0,
+          "min": 38.5,
+          "max": 38.5,
+          "values": [
+            38.5
+          ]
+        },
+        "lexical.stripped.found_by_semantic_tier": {
+          "mean": 0,
+          "sd": 0.0,
+          "min": 0,
+          "max": 0,
+          "values": [
+            0
+          ]
+        },
+        "lexical.fp.fp_rate_pct": {
+          "mean": 2.1,
+          "sd": 0.0,
+          "min": 2.1,
+          "max": 2.1,
+          "values": [
+            2.1
+          ]
+        },
+        "lexical.fp.false_attribution_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0
+          ]
+        },
+        "lexical.latency.quote_mean_ms": {
+          "mean": 38.8,
+          "sd": 0.0,
+          "min": 38.8,
+          "max": 38.8,
+          "values": [
+            38.8
+          ]
+        },
+        "semantic.stripped.detection_pct": {
+          "mean": 38.3,
+          "sd": 0.0,
+          "min": 38.3,
+          "max": 38.3,
+          "values": [
+            38.3
+          ]
+        },
+        "semantic.stripped.ref_accuracy_pct": {
+          "mean": 80.0,
+          "sd": 0.0,
+          "min": 80.0,
+          "max": 80.0,
+          "values": [
+            80.0
+          ]
+        },
+        "semantic.stripped.attributed_pct": {
+          "mean": 2.1,
+          "sd": 0.0,
+          "min": 2.1,
+          "max": 2.1,
+          "values": [
+            2.1
+          ]
+        },
+        "semantic.stripped.UNATTRIBUTED_pct": {
+          "mean": 26.6,
+          "sd": 0.0,
+          "min": 26.6,
+          "max": 26.6,
+          "values": [
+            26.6
+          ]
+        },
+        "semantic.published.detection_pct": {
+          "mean": 57.9,
+          "sd": 0.0,
+          "min": 57.9,
+          "max": 57.9,
+          "values": [
+            57.9
+          ]
+        },
+        "semantic.published.ref_accuracy_pct": {
+          "mean": 95.8,
+          "sd": 0.0,
+          "min": 95.8,
+          "max": 95.8,
+          "values": [
+            95.8
+          ]
+        },
+        "semantic.published.attributed_pct": {
+          "mean": 3.0,
+          "sd": 0.0,
+          "min": 3.0,
+          "max": 3.0,
+          "values": [
+            3.0
+          ]
+        },
+        "semantic.published.UNATTRIBUTED_pct": {
+          "mean": 46.3,
+          "sd": 0.0,
+          "min": 46.3,
+          "max": 46.3,
+          "values": [
+            46.3
+          ]
+        },
+        "semantic.stripped.found_by_semantic_tier": {
+          "mean": 70,
+          "sd": 0.0,
+          "min": 70,
+          "max": 70,
+          "values": [
+            70
+          ]
+        },
+        "semantic.fp.fp_rate_pct": {
+          "mean": 2.5,
+          "sd": 0.0,
+          "min": 2.5,
+          "max": 2.5,
+          "values": [
+            2.5
+          ]
+        },
+        "semantic.fp.false_attribution_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0
+          ]
+        },
+        "semantic.latency.quote_mean_ms": {
+          "mean": 63.0,
+          "sd": 0.0,
+          "min": 63.0,
+          "max": 63.0,
+          "values": [
+            63.0
+          ]
+        },
+        "delta.stripped.detection_pct": {
+          "mean": 16.1,
+          "sd": 0.0,
+          "min": 16.1,
+          "max": 16.1,
+          "values": [
+            16.1
+          ]
+        },
+        "delta.stripped.ref_accuracy_pct": {
+          "mean": 5.0,
+          "sd": 0.0,
+          "min": 5.0,
+          "max": 5.0,
+          "values": [
+            5.0
+          ]
+        },
+        "delta.stripped.attributed_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0
+          ]
+        },
+        "delta.stripped.UNATTRIBUTED_pct": {
+          "mean": 16.0,
+          "sd": 0.0,
+          "min": 16.0,
+          "max": 16.0,
+          "values": [
+            16.0
+          ]
+        },
+        "delta.published.detection_pct": {
+          "mean": 7.8,
+          "sd": 0.0,
+          "min": 7.8,
+          "max": 7.8,
+          "values": [
+            7.8
+          ]
+        },
+        "delta.published.ref_accuracy_pct": {
+          "mean": -1.3,
+          "sd": 0.0,
+          "min": -1.3,
+          "max": -1.3,
+          "values": [
+            -1.3
+          ]
+        },
+        "delta.published.attributed_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0
+          ]
+        },
+        "delta.published.UNATTRIBUTED_pct": {
+          "mean": 7.8,
+          "sd": 0.0,
+          "min": 7.8,
+          "max": 7.8,
+          "values": [
+            7.8
+          ]
+        },
+        "delta.fp.fp_rate_pct": {
+          "mean": 0.4,
+          "sd": 0.0,
+          "min": 0.4,
+          "max": 0.4,
+          "values": [
+            0.4
+          ]
+        },
+        "delta.fp.false_attribution_pct": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0
+          ]
+        }
+      },
+      "detail": {
+        "quotations": 473,
+        "negatives": 560,
+        "by_language": {
+          "bn": {
+            "lexical.stripped.detection_pct": 15.8,
+            "lexical.published.detection_pct": 84.2,
+            "semantic.stripped.detection_pct": 47.4,
+            "semantic.published.detection_pct": 89.5
+          },
+          "en": {
+            "lexical.stripped.detection_pct": 39.2,
+            "lexical.published.detection_pct": 63.8,
+            "semantic.stripped.detection_pct": 46.2,
+            "semantic.published.detection_pct": 65.4
+          },
+          "hi": {
+            "lexical.stripped.detection_pct": 10.6,
+            "lexical.published.detection_pct": 55.3,
+            "semantic.stripped.detection_pct": 26.6,
+            "semantic.published.detection_pct": 60.6
+          },
+          "tl": {
+            "lexical.stripped.detection_pct": 7.1,
+            "lexical.published.detection_pct": 44.7,
+            "semantic.stripped.detection_pct": 22.4,
+            "semantic.published.detection_pct": 45.9
+          },
+          "ur": {
+            "lexical.stripped.detection_pct": 25.4,
+            "lexical.published.detection_pct": 25.4,
+            "semantic.stripped.detection_pct": 46.8,
+            "semantic.published.detection_pct": 46.8
+          }
+        },
+        "semantic_status": {
+          "model": "BAAI/bge-m3",
+          "model_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+          "index_languages": [
+            "bn",
+            "en",
+            "hi",
+            "tl",
+            "ur"
+          ],
+          "index_design": "renderings-centroid+arabic"
+        }
+      }
+    }
+  }
+}

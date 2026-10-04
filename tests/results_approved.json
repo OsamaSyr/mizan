@@ -1,0 +1,47 @@
+{
+  "index": {
+    "source": "quranpedia.net",
+    "version": "2026-10-01",
+    "translations": 22,
+    "renderings": 137180
+  },
+  "control": {
+    "n": 8305,
+    "false_alarms": 0,
+    "rate": 0.0,
+    "per_lang": {
+      "bn": {
+        "ok": 796,
+        "total": 796
+      },
+      "en": {
+        "ok": 5925,
+        "total": 5925
+      },
+      "tl": {
+        "ok": 798,
+        "total": 798
+      },
+      "ur": {
+        "ok": 786,
+        "total": 786
+      }
+    }
+  },
+  "identity": {
+    "n": 8289,
+    "correct": 7514,
+    "accuracy": 0.9065
+  },
+  "separation": {
+    "diff_mean": 0.464,
+    "diff_median": 0.473,
+    "collisions": 7,
+    "n": 500
+  },
+  "rejection": {
+    "n": 302,
+    "caught": 302,
+    "recall": 1.0
+  }
+}

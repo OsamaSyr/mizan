@@ -1,0 +1,138 @@
+{
+  "refs": "refs.json",
+  "n_verses": 6236,
+  "model": "BAAI/bge-m3",
+  "model_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "dimension": 1024,
+  "dtype_on_disk": "float16",
+  "pooling": "CLS, L2-normalised (bge-m3 dense)",
+  "doc_max_tokens": 256,
+  "design": "renderings-centroid+arabic",
+  "corpus": "data/corpus.sqlite",
+  "corpus_version": "2026-10-01",
+  "built_at": "2026-10-03T15:42:44Z",
+  "device": "mps",
+  "languages": {
+    "bn": {
+      "parts": [
+        {
+          "source": "renderings:centroid",
+          "vectors": "bn.centroid.f16.npy",
+          "weight": 0.8,
+          "editions": [
+            1967,
+            27826
+          ],
+          "verses_covered": 6236
+        },
+        {
+          "source": "arabic:tanzil-simple",
+          "vectors": "arabic.f16.npy",
+          "weight": 0.2,
+          "verses_covered": 6236
+        }
+      ]
+    },
+    "en": {
+      "parts": [
+        {
+          "source": "renderings:centroid",
+          "vectors": "en.centroid.f16.npy",
+          "weight": 0.8,
+          "editions": [
+            1947,
+            1948,
+            13602,
+            13603,
+            13604,
+            13605,
+            13638,
+            13640,
+            13644,
+            13645,
+            13661,
+            13662,
+            27811,
+            27824,
+            27833
+          ],
+          "verses_covered": 6236
+        },
+        {
+          "source": "arabic:tanzil-simple",
+          "vectors": "arabic.f16.npy",
+          "weight": 0.2,
+          "verses_covered": 6236
+        }
+      ]
+    },
+    "hi": {
+      "parts": [
+        {
+          "source": "renderings:centroid",
+          "vectors": "hi.centroid.f16.npy",
+          "weight": 0.8,
+          "editions": [
+            1986
+          ],
+          "verses_covered": 6236
+        },
+        {
+          "source": "arabic:tanzil-simple",
+          "vectors": "arabic.f16.npy",
+          "weight": 0.2,
+          "verses_covered": 6236
+        }
+      ]
+    },
+    "tl": {
+      "parts": [
+        {
+          "source": "renderings:centroid",
+          "vectors": "tl.centroid.f16.npy",
+          "weight": 0.8,
+          "editions": [
+            1963,
+            2010
+          ],
+          "verses_covered": 6236
+        },
+        {
+          "source": "arabic:tanzil-simple",
+          "vectors": "arabic.f16.npy",
+          "weight": 0.2,
+          "verses_covered": 6236
+        }
+      ]
+    },
+    "ur": {
+      "parts": [
+        {
+          "source": "renderings:centroid",
+          "vectors": "ur.centroid.f16.npy",
+          "weight": 0.8,
+          "editions": [
+            1966,
+            13625
+          ],
+          "verses_covered": 6236
+        },
+        {
+          "source": "arabic:tanzil-simple",
+          "vectors": "arabic.f16.npy",
+          "weight": 0.2,
+          "verses_covered": 6236
+        }
+      ]
+    }
+  },
+  "timings_s": {
+    "arabic": 11.4,
+    "bn": 58.9,
+    "en": 322.8,
+    "hi": 22.7,
+    "tl": 71.1,
+    "ur": 46.8,
+    "total": 538.6
+  }
+}

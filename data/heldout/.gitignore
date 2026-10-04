@@ -1,0 +1,5 @@
+# Third-party translation text: fetched by scripts/fetch_heldout.py,
+# never committed. Only the manifest (SHA-256s, no text) is tracked.
+*
+!.gitignore
+!manifest.json

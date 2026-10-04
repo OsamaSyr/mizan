@@ -1,0 +1,10 @@
+# Linux CPU benchmark image (measurement only — not the production image).
+# Same pins as requirements-ml.txt; CPU wheel of torch from the PyTorch index,
+# which is also what a Hetzner CAX / OCI A1 / Graviton (aarch64) server gets.
+#   docker build -f deploy/experiments/Dockerfile.bench -t mizan-bench deploy/experiments
+FROM python:3.11-slim
+RUN apt-get update && apt-get install -y --no-install-recommends procps && rm -rf /var/lib/apt/lists/*
+RUN pip install --no-cache-dir "torch==2.14.1" --index-url https://download.pytorch.org/whl/cpu \
+ && pip install --no-cache-dir "transformers==4.57.6" "tokenizers==0.22.2" "safetensors==0.8.0" "numpy==2.4.6"
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 HF_HUB_CACHE=/hf/hub HF_HUB_OFFLINE=1
+WORKDIR /app

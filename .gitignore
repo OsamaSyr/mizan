@@ -1,0 +1,67 @@
+# ---------------------------------------------------------------------------
+# MIZAN — what is NOT in the public repository, and why.
+# `make setup` rebuilds everything below from the publishers' official files.
+# ---------------------------------------------------------------------------
+
+# The index: ~124 MB, over GitHub's 100 MB file limit. Rebuilt and verified
+# against a pinned content fingerprint by scripts/setup.sh.
+data/corpus.sqlite
+data/corpus.sqlite-*
+data/*.sqlite-journal
+
+# Downloaded sources (Quranpedia dump, Tanzil text). Re-downloaded and
+# checksum-verified by scripts/setup.sh.
+data/raw/
+
+# Real-world test corpus: text published by islamreligion.com and islamqa.info.
+# Not ours to redistribute. The repo keeps data/real/manifest.json (crawl audit)
+# and data/real/corpus.manifest.json (URLs, ordinals, refs, SHA-256 — no text);
+# scripts/rebuild_real_corpus.py rebuilds the text from the publishers' pages.
+data/real/raw/
+data/real/corpus.jsonl
+data/real/negatives.jsonl
+data/real/rebuild_report.json
+# The harness output quotes up to 400 characters of each item — same reason.
+tests/results_real.json
+
+# Semantic tier vectors (data/embeddings/, 77 MB in 12.8 MB files) ARE committed:
+# derived from the Quranpedia index (redistributable with attribution and
+# version, see docs/REGISTRY.md), and rebuilding them on a CPU takes hours.
+# Rebuild with scripts/build_embeddings.py; index.json records model, revision
+# and corpus version.
+
+# الجمهرة (islamic-content.com) material. Its terms grant personal, non-commercial
+# scholarly use only, so the dictionary's prose definitions are not
+# redistributed: the page cache, the full records (they carry definition_ar /
+# definition_en) and the parallel-definition calibration set stay local.
+# Committed instead: data/glossary/jamhara.public.jsonl (term <-> approved
+# English + source URL, no definitions), package_terms.json, manifest.json,
+# measurement.json. See docs/SOURCES.md §3.
+data/glossary/raw/
+data/glossary/jamhara.jsonl
+data/glossary/parallel_definitions.jsonl
+
+# Reviewer decisions are local state, not source.
+data/review.sqlite
+data/review.sqlite-*
+
+# Evaluation caches. results/summary.json and results/SUMMARY.md ARE committed.
+# (cache/ holds harness output that quotes third-party text.)
+results/**/cache/
+results/quick/
+
+# Python / tooling
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+
+# Partial downloads, OS and editor noise
+*.part
+.DS_Store
+.idea/
+.vscode/

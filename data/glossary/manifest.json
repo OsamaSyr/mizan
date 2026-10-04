@@ -1,0 +1,222 @@
+{
+  "started": "2026-10-03T16:21:20Z",
+  "finished": "2026-10-03T16:21:21Z",
+  "user_agent": "Mizan-Research/0.1 (Islamic AI Challenge 2026; contact osamaabdullh2002@gmail.com)",
+  "robots": {
+    "provenance": "snapshot (offline run)",
+    "groups_applied": [
+      [
+        "claudebot"
+      ],
+      [
+        "*"
+      ]
+    ],
+    "disallow": [
+      "/admin/",
+      "/api/",
+      "/attachment/",
+      "/ayah/",
+      "/config/",
+      "/legacy-dictionary/"
+    ],
+    "crawl_delay_stated": 5.0,
+    "delay_used": 5.5
+  },
+  "requests": {
+    "network": 0,
+    "cache_hits": 618,
+    "cache_misses_offline": 0,
+    "blocked_by_policy": 0,
+    "http_errors": 0
+  },
+  "blocked_urls": [],
+  "errors": [],
+  "listings": {
+    "categories": {
+      "1": "القرآن الكريم وعلومه",
+      "266": "الحديث الشريف وعلومه",
+      "428": "أصول الفقه",
+      "543": "التربية والسلوك",
+      "670": "الدعوة والاحتساب",
+      "707": "السيرة",
+      "1063": "الفقه الإسلامي",
+      "1792": "العقيدة"
+    },
+    "unique_entries": 12689
+  },
+  "seeds": 304,
+  "seeds_resolved": 283,
+  "seeds_unresolved": [
+    "الإِلَه",
+    "الأسماء الحسنى",
+    "الآخرة",
+    "إبليس",
+    "الرسل",
+    "خاتم النبيين",
+    "الزبور",
+    "أركان الإسلام",
+    "أركان الإيمان",
+    "كلمة التوحيد",
+    "الولاء والبراء",
+    "التوسل",
+    "الركعة",
+    "عيد الفطر",
+    "عيد الأضحى",
+    "الذبيحة",
+    "التوكل",
+    "الشكر",
+    "الرحمة",
+    "المَحْرَم",
+    "الحوار"
+  ],
+  "seeds_with_english": 270,
+  "seeds_without_english": [
+    "التسليم",
+    "التشهد",
+    "الجار",
+    "الذبائح",
+    "الرِّضا",
+    "الغِيبَة",
+    "القِصَاص",
+    "الكفارة",
+    "المؤلفة قلوبهم",
+    "المسجد النبوي",
+    "المناسك",
+    "الميراث",
+    "الميزان"
+  ],
+  "records": 335,
+  "records_with_english": 274,
+  "records_english_null": 61,
+  "max_senses": 3,
+  "parallel_definitions": 246,
+  "review_flags": {
+    "4973": {
+      "flag": "wrong_sense",
+      "reason": "vocalised «الدِّيْنُ» but defined «حَقٌّ لازِمٌ في الذِّمَّةِ» — a debt; English \"Debt\""
+    },
+    "2118": {
+      "flag": "suspect_title",
+      "reason": "defined as the resurrection of the dead (AR and EN); English title \"Expedition\""
+    },
+    "4298": {
+      "flag": "wrong_sense",
+      "reason": "defined as recording revenue collected by officials — bookkeeping, not the Reckoning; English \"Accounting\""
+    },
+    "4299": {
+      "flag": "wrong_sense",
+      "reason": "defined as recording revenue collected by officials — bookkeeping, not the Reckoning"
+    },
+    "4544": {
+      "flag": "wrong_sense",
+      "reason": "defined «مكان يجتمع فيه الماء» — any pool, not the Prophet's Basin; English \"Pond\""
+    },
+    "4545": {
+      "flag": "wrong_sense",
+      "reason": "defined «مكان يجتمع فيه الماء» with fiqh examples — any pool, not the Prophet's Basin"
+    },
+    "5191": {
+      "flag": "suspect_title",
+      "reason": "defined as leaving Islam for disbelief (AR and EN); English title \"Reverberation\""
+    },
+    "5669": {
+      "flag": "suspect_title",
+      "reason": "defined as the leading scholars of the Companions and Followers (AR and EN); English title \"Lending\""
+    },
+    "5670": {
+      "flag": "wrong_sense",
+      "reason": "defined «دفع مال إرفاقاً لمن ينتفع به ويرد مثله» — a loan, not the righteous predecessors"
+    },
+    "9740": {
+      "flag": "suspect_title",
+      "reason": "defined as the Prophet's ascension (AR and EN); English title \"Tool of ascension\" renders the instrument-noun form, not the event"
+    },
+    "5351": {
+      "flag": "wrong_sense",
+      "reason": "vocalised «الرُّوحُ» but defined «الرحمة. وهي صفة لله تعالى» — mercy (الرَّوْح), not the soul; English \"Mercy\""
+    },
+    "1408": {
+      "flag": "suspect_title",
+      "reason": "defined as announcing that the congregational prayer is starting (AR and EN); English title \"Residency\""
+    },
+    "2801": {
+      "flag": "wrong_sense",
+      "reason": "defined as handing a thing over to another (a sale/transfer), not the closing salam of the prayer"
+    },
+    "4216": {
+      "flag": "wrong_sense",
+      "reason": "defined «مصطلح لدى بعض الفقهاء يفيد الخلاف» — a jurists' term for disagreement, not the Sanctuary; English \"Prohibited\""
+    },
+    "6874": {
+      "flag": "suspect_title",
+      "reason": "defined as the original ruling legislated by a proof and unchanged by circumstance (AR and EN); English title \"Firm intention\""
+    },
+    "6772": {
+      "flag": "suspect_title",
+      "reason": "defined «استعمال الأمور في مواضعها» — putting things in their proper place, i.e. justice; English title \"Moderation\""
+    },
+    "2038": {
+      "flag": "suspect_title",
+      "reason": "defined as the deed that brings one closer to Allah — righteousness; English title \"The Beneficent\" (the divine name)"
+    },
+    "2142": {
+      "flag": "wrong_sense",
+      "reason": "defined as money given to a proxy to cover performing hajj on another's behalf; English \"Hajj wages\" — not conveying the message"
+    },
+    "3153": {
+      "flag": "wrong_sense",
+      "reason": "defined as clarifying an ambiguous admission (AR) / an ability to relate ideas (EN); English \"Understanding\" — not Quranic exegesis"
+    },
+    "9567": {
+      "flag": "suspect_title",
+      "reason": "defined as the sheets in which the Quran is collected (AR and EN); English title \"Altering narrator\" belongs to «المُصَحِّف»"
+    },
+    "6166": {
+      "flag": "wrong_sense",
+      "reason": "«الصحيح» as the preferred juristic view; English \"The correct view\" — not the hadith grade"
+    },
+    "6167": {
+      "flag": "wrong_sense",
+      "reason": "«الصحيح» as an act that achieves its intended effect (valid) — not the hadith grade"
+    },
+    "6168": {
+      "flag": "wrong_sense",
+      "reason": "«الصحيح» as a term signalling a juristic preference — not the hadith grade"
+    },
+    "10238": {
+      "flag": "wrong_sense",
+      "reason": "«الموضوع» as the grammatical subject of a sentence; English \"Subject matter\" — not a fabricated hadith"
+    },
+    "10239": {
+      "flag": "wrong_sense",
+      "reason": "«الموضوع» as the grammatical subject of a sentence — not a fabricated hadith"
+    },
+    "5764": {
+      "flag": "wrong_sense",
+      "reason": "«السند» as a written legal deed; English \"Legal document\" — not the chain of narration"
+    },
+    "5765": {
+      "flag": "wrong_sense",
+      "reason": "«السند» as a written legal deed — not the chain of narration"
+    },
+    "144": {
+      "flag": "wrong_sense",
+      "reason": "«الأثر» as the result of something; English \"Effect\" — not a narration (athar)"
+    },
+    "145": {
+      "flag": "wrong_sense",
+      "reason": "«الأثر» as the result of something — not a narration (athar)"
+    },
+    "5837": {
+      "flag": "wrong_sense",
+      "reason": "«السيرة» as the rules governing relations with non-Muslims (siyar); English \"Lifestyle\" — not the Prophet's biography"
+    },
+    "5838": {
+      "flag": "wrong_sense",
+      "reason": "«السيرة» as a person's state or conduct — not the Prophet's biography"
+    }
+  },
+  "seeds_with_usable_english": 258,
+  "contact_note": "The contact address in user_agent was replaced with the maintainer's personal address on 2026-10-04; at retrieval time the same maintainer's work address was sent."
+}

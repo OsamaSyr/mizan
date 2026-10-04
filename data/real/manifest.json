@@ -1,0 +1,95 @@
+{
+  "retrieved_at": "2026-10-02T16:36:13Z",
+  "user_agent": "Mizan-Research/0.1 (Islamic AI Challenge 2026; contact osamaabdullh2002@gmail.com)",
+  "default_delay_seconds": 2.5,
+  "max_pages_per_host": 40,
+  "robots": {
+    "www.islamreligion.com": {
+      "robots_url": "https://www.islamreligion.com/robots.txt",
+      "status": "from cache",
+      "crawl_delay_stated": null,
+      "delay_used_seconds": 2.5,
+      "disallow_lines": [
+        "Disallow:"
+      ],
+      "decision": "CRAWL (per-URL check still applied)"
+    },
+    "islamqa.info": {
+      "robots_url": "https://islamqa.info/robots.txt",
+      "status": "from cache",
+      "crawl_delay_stated": null,
+      "delay_used_seconds": 2.5,
+      "disallow_lines": [
+        "Disallow: /_next/"
+      ],
+      "decision": "CRAWL (per-URL check still applied)"
+    }
+  },
+  "sources": [
+    {
+      "lang": "en",
+      "seed": "https://www.islamreligion.com/articles/",
+      "status": "ok",
+      "articles": 40,
+      "missing_in_language": 0,
+      "quotes": 130
+    },
+    {
+      "lang": "hi",
+      "seed": "https://www.islamreligion.com/hi/articles/",
+      "status": "ok",
+      "articles": 25,
+      "missing_in_language": 0,
+      "quotes": 85
+    },
+    {
+      "lang": "tl",
+      "seed": "https://www.islamreligion.com/tl/articles/",
+      "status": "ok",
+      "articles": 25,
+      "missing_in_language": 0,
+      "quotes": 85
+    },
+    {
+      "lang": "ur",
+      "seed": "https://islamqa.info/sitemaps/ur/answers/1/sitemap.xml",
+      "status": "ok",
+      "sitemap_urls": 9038,
+      "articles": 160,
+      "quotes": 126
+    },
+    {
+      "lang": "bn",
+      "seed": "https://islamqa.info/sitemaps/bn/answers/1/sitemap.xml",
+      "status": "ok",
+      "sitemap_urls": 1752,
+      "articles": 160,
+      "quotes": 38
+    },
+    {
+      "lang": "hi",
+      "seed": "https://islamqa.info/sitemaps/hi/answers/1/sitemap.xml",
+      "status": "ok",
+      "sitemap_urls": 1913,
+      "articles": 160,
+      "quotes": 9
+    }
+  ],
+  "pages_fetched": 570,
+  "quotations": 473,
+  "quotations_with_printed_ref": 262,
+  "negative_paragraphs": 560,
+  "by_language": {
+    "en": 130,
+    "hi": 94,
+    "tl": 85,
+    "ur": 126,
+    "bn": 38
+  },
+  "by_host": {
+    "www.islamreligion.com": 300,
+    "islamqa.info": 173
+  },
+  "license_note": "Quoted for non-commercial research measurement under fair-use / fair-dealing. Each record stores only the quoted span and a short surrounding context, with the source URL retained for attribution. Not redistributed as a reading edition.",
+  "contact_note": "The contact address in user_agent was replaced with the maintainer's personal address on 2026-10-04; at retrieval time the same maintainer's work address was sent."
+}

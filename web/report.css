@@ -1,0 +1,91 @@
+/* MIZAN — downloadable report. Inlined into the report file by app.py, so the
+   saved HTML has no external dependency of any kind. System fonts only. */
+
+:root{
+  color-scheme: light;
+  --ink:#15211d; --ink-2:#44564f; --ink-3:#6b7c75;
+  --paper:#ffffff; --card:#f6f7f5; --line:#dfe5e1;
+  --deep:#1b4d3e; --deep-soft:#e8f0ec;
+  --gold:#8a6d0c; --gold-soft:#faf3dc;
+  --flag:#9b2c2c; --flag-soft:#fbeaea;
+  --ai:#4a3b8f; --ai-soft:#eeebfa;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:"IBM Plex Sans Arabic","Noto Sans Arabic","Segoe UI",Tahoma,system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme: dark;
+    --ink:#e8eeea; --ink-2:#a9bab2; --ink-3:#8a9c95;
+    --paper:#0f1613; --card:#161f1b; --line:#2a3832;
+    --deep:#6fbfa0; --deep-soft:#153026;
+    --gold:#d9b43c; --gold-soft:#2e2712;
+    --flag:#e08585; --flag-soft:#331a1a;
+    --ai:#b3a6f0; --ai-soft:#241f3d;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans);
+  font-size:15px; line-height:1.7; direction:rtl}
+header.top{display:flex; flex-wrap:wrap; gap:12px; align-items:baseline;
+  padding:18px 16px; border-bottom:1px solid var(--line); max-width:960px; margin:0 auto}
+.brand{font-size:24px; font-weight:700}
+.brand span{color:var(--deep)}
+.sub{color:var(--ink-3); font-size:13.5px}
+.badge{margin-inline-start:auto; font-size:12px; border:1px solid var(--line);
+  border-radius:999px; padding:4px 11px; color:var(--ink-2); white-space:nowrap}
+main{max-width:960px; margin:0 auto; padding:16px 16px 48px}
+h2{font-size:15px; margin:28px 0 10px; color:var(--ink-2)}
+a{color:var(--deep)}
+.muted{color:var(--ink-3)} .small{font-size:12px}
+.num{font-family:var(--mono); direction:ltr; unicode-bidi:isolate}
+table{width:100%; border-collapse:collapse}
+th,td{text-align:start; vertical-align:top; padding:7px 8px; border-bottom:1px solid var(--line); overflow-wrap:anywhere}
+td.hash{word-break:break-all}
+th{width:170px; font-weight:600; color:var(--ink-2); font-size:13px}
+.meta{background:var(--card); border:1px solid var(--line); border-radius:10px; margin:14px 0}
+.meta tr:last-child th,.meta tr:last-child td{border-bottom:0}
+.verdict{border:1px solid var(--line); border-radius:10px; padding:14px 16px; margin-top:8px}
+.verdict .vlabel{font-size:11.5px; color:var(--ink-3); font-weight:600}
+.verdict .big{font-size:20px; font-weight:700}
+.verdict p{margin:4px 0 0; font-size:13.5px}
+.verdict.refer{border-color:var(--flag); background:var(--flag-soft)} .verdict.refer .big{color:var(--flag)}
+.verdict.near{border-color:var(--gold); background:var(--gold-soft)} .verdict.near .big{color:var(--gold)}
+.verdict.ok{border-color:var(--deep); background:var(--deep-soft)} .verdict.ok .big{color:var(--deep)}
+.finding{border:1px solid var(--line); border-radius:10px; padding:12px 14px; margin-bottom:12px;
+  break-inside:avoid}
+.finding header{display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:6px}
+.ref{font-family:var(--mono); background:var(--card); border-radius:5px; padding:2px 8px; direction:ltr}
+.state{font-size:12.5px; font-weight:600; border-radius:999px; padding:3px 11px}
+.state.match{color:var(--deep); background:var(--deep-soft)}
+.state.near{color:var(--gold); background:var(--gold-soft)}
+.state.refer{color:var(--flag); background:var(--flag-soft)}
+.state.none{color:var(--ink-2); background:var(--card)}
+.txt{overflow-wrap:anywhere; text-align:start}
+.txt[dir="ltr"]{text-align:left}
+.txt.approved{border-inline-start:3px solid var(--deep); padding-inline-start:10px}
+mark{border-radius:3px; padding:0 2px}
+mark.pub{background:var(--gold-soft); color:var(--gold)}
+mark.app{background:var(--deep-soft); color:var(--deep)}
+.ai{font-size:11.5px; color:var(--ai); background:var(--ai-soft); border-radius:999px; padding:1px 8px}
+.ai-note{background:var(--ai-soft); border:1px solid var(--line); border-radius:8px; padding:10px 12px; font-size:13.5px}
+.warn{background:var(--gold-soft); border:1px solid var(--gold); border-radius:8px; padding:10px 12px; font-size:13.5px}
+.hist{margin:6px 0 0; padding-inline-start:20px}
+.hist li{margin-bottom:6px}
+.note{font-size:13px; color:var(--ink-2)}
+.terms th{width:auto}
+footer{margin-top:30px; padding-top:14px; border-top:1px solid var(--line); font-size:13px; color:var(--ink-2)}
+@media (max-width:600px){
+  table,tbody,tr{display:block; width:100%}
+  .terms tbody{display:table-row-group} .terms tr{display:table-row}
+  th{width:auto; display:block; border-bottom:0; padding-bottom:0}
+  td{display:block}
+  .meta th,.finding th{padding-top:8px}
+  .badge{margin-inline-start:0}
+  .terms th,.terms td{display:table-cell}
+  .terms{display:block; overflow-x:auto}
+}
+@media print{
+  body{background:#fff; color:#000}
+  a{color:#000}
+  a[href^="http"]::after{content:" (" attr(href) ")"; font-size:10px; direction:ltr; unicode-bidi:isolate}
+}

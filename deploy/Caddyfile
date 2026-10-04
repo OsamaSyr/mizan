@@ -1,0 +1,43 @@
+# /etc/caddy/Caddyfile - written by deploy/provision.sh from deploy/Caddyfile
+# (__DOMAIN__ and __ACME_EMAIL__ are filled in there).
+#
+# Caddy obtains and renews the Let's Encrypt certificate by itself, redirects
+# http -> https, and serves HTTP/1.1, HTTP/2 and HTTP/3.
+{
+	email __ACME_EMAIL__
+}
+
+__DOMAIN__ {
+	encode zstd gzip
+
+	# app.py caps request bodies at 512 KB itself; refuse anything far larger
+	# before it reaches the single engine.
+	request_body {
+		max_size 1MB
+	}
+
+	header Strict-Transport-Security "max-age=31536000"
+
+	# AI-tier status written by the prewarm and the watchdog, for the external
+	# keyword monitor: {"ai_tier": "up" | "degraded" | "unknown", ...}
+	handle_path /_ops/* {
+		root * /var/lib/mizan-status
+		file_server
+	}
+
+	handle {
+		reverse_proxy 127.0.0.1:8000 {
+			# While mizan restarts (a few seconds) hold requests and retry the
+			# connection instead of answering 502 at once.
+			lb_try_duration 30s
+			lb_try_interval 500ms
+			transport http {
+				# Longest check: the app gives up at MIZAN_CHECK_TIMEOUT (115 s).
+				response_header_timeout 180s
+			}
+		}
+	}
+
+	# No `log` directive on purpose: Caddy then writes no access log, so client
+	# IP addresses are never stored ("No accounts, no IPs, no analytics").
+}
