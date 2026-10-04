@@ -46,6 +46,10 @@ Configuration (environment)
     MIZAN_CLARITY_MODEL   "1" asks Panel 3 to try its model adapter (off)
     MIZAN_TERMS_MODULE    module providing check_terms()     (mizan.terms)
     MIZAN_CLARITY_MODULE  module providing adapt_document()  (mizan.clarity)
+    MIZAN_SEMANTIC        "0" turns the AI tier (BGE-M3) off      (on when installed)
+    MIZAN_DEVICE          cpu / mps / cuda for the AI tier       (auto)
+    MIZAN_SEM_TOKEN_BUDGET  tokens the AI tier may embed per check (1024)
+    (setup: MIZAN_ACCEPT_NEW_DUMP=1 accepts a Quranpedia dump newer than the pinned one)
 """
 from __future__ import annotations
 
