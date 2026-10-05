@@ -22,7 +22,7 @@ a time, then wrapped in neutral prose of our own, with and without a printed
 reference. 38 attack documents ran on the deterministic path before the review
 session was stopped; the rest of the findings came from reading the code and
 were reproduced afterwards. The attacks are now `tests/test_redteam.py`
-(16 tests) plus app-level tests in `tests/test_app.py`.
+(20 tests) plus app-level tests in `tests/test_app.py`.
 
 ## Findings and fixes
 

@@ -103,6 +103,7 @@ textarea:focus-visible, button:focus-visible, select:focus-visible, input:focus-
   background:var(--mute-soft); border:1px solid var(--line); border-radius:9px;
 }
 .samples .lbl{font-size:12.5px; color:var(--ink-3); margin-inline-end:2px}
+.samples .srow{display:flex; gap:8px; align-items:center; flex-wrap:wrap; flex-basis:100%}
 .chip{
   font-family:var(--sans); font-size:12.5px; color:var(--ink-2);
   background:var(--card); border:1px solid var(--line);
@@ -111,7 +112,7 @@ textarea:focus-visible, button:focus-visible, select:focus-visible, input:focus-
 .chip:hover{border-color:var(--ink-3)}
 .chip[aria-pressed="true"]{color:var(--on-deep); background:var(--deep); border-color:var(--deep)}
 .chip .dot{display:inline-block; width:7px; height:7px; border-radius:50%; margin-inline-end:6px; vertical-align:middle}
-.d-flag{background:var(--flag)} .d-ok{background:var(--deep)} .d-near{background:var(--gold)}
+.d-flag{background:var(--flag)} .d-ok{background:var(--deep)} .d-near{background:var(--gold)} .d-ai{background:var(--ai)} .d-none{background:var(--ink-3)}
 .chip[aria-pressed="true"] .dot{background:currentColor}
 .own{font-size:12.5px; color:var(--ink-3); margin-inline-start:auto}
 @media (max-width:640px){ .own{margin-inline-start:0} }

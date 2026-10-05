@@ -29,6 +29,74 @@
     }
   };
 
+  /* One more sample per outcome, short and long, with and without the Arabic.
+     Approved verse text is copied verbatim from the index; every other word
+     is ours. JSON between the markers; tests/test_samples.py pins each
+     sample's outcome. */
+  var MORE_SAMPLES = /* samples:start */{
+    "s4": {
+      "lang": "en",
+      "ar": "وحذّر سبحانه من أعظم الذنوب فقال: ﴿إِنَّ ٱللَّهَ لَا يَغْفِرُ أَن يُشْرَكَ بِهِۦ وَيَغْفِرُ مَا دُونَ ذَٰلِكَ لِمَن يَشَآءُ وَمَن يُشْرِكْ بِٱللَّهِ فَقَدِ ٱفْتَرَىٰٓ إِثْمًا عَظِيمًا﴾ [النساء: ٤٨].",
+      "en": "God warned against the gravest of sins: \"Indeed, Allah does forgive association with Him, but He forgives what is less than that for whom He wills. And he who associates others with Allah has certainly fabricated a tremendous sin.\" (Quran 4:48)"
+    },
+    "s11": {
+      "lang": "en",
+      "ar": "وذكّر الكاتب بقوله تعالى: ﴿إِنَّمَا ٱلْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا۟ بَيْنَ أَخَوَيْكُمْ وَٱتَّقُوا۟ ٱللَّهَ لَعَلَّكُمْ تُرْحَمُونَ﴾ [الحجرات: ١٠]، ثم انتقل إلى الحديث عن آداب المجالس.",
+      "en": "The writer then moved on to the manners of gatherings."
+    },
+    "s12": {
+      "lang": "ur",
+      "ar": "وأمر الله المؤمنين بالاستعانة بالصبر والصلاة فقال: ﴿يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱسْتَعِينُوا۟ بِٱلصَّبْرِ وَٱلصَّلَوٰةِ إِنَّ ٱللَّهَ مَعَ ٱلصَّٰبِرِينَ﴾ [البقرة: ١٥٣].",
+      "en": "صبر کے بارے میں قرآن کہتا ہے: ’’اے ایمان والو! صبر اور نماز کے ذریعہ مدد چاہو، اللہ تعالی صبر والوں کا ساتھ دیتا ہے‘‘ (البقرة 2:153)"
+    },
+    "L2": {
+      "lang": "en",
+      "ar": "الرحمة في الإسلام منهج حياة\n\nبُعث النبي ﷺ رحمةً للناس كافة، قال تعالى: ﴿وَمَآ أَرْسَلْنَٰكَ إِلَّا رَحْمَةً لِّلْعَٰلَمِينَ﴾ [الأنبياء: ١٠٧]. وكانت هذه الرحمة ظاهرة في معاملته لأصحابه، فقال سبحانه: ﴿فَبِمَا رَحْمَةٍ مِّنَ ٱللَّهِ لِنتَ لَهُمْ وَلَوْ كُنتَ فَظًّا غَلِيظَ ٱلْقَلْبِ لَٱنفَضُّوا۟ مِنْ حَوْلِكَ فَٱعْفُ عَنْهُمْ وَٱسْتَغْفِرْ لَهُمْ وَشَاوِرْهُمْ فِى ٱلْأَمْرِ فَإِذَا عَزَمْتَ فَتَوَكَّلْ عَلَى ٱللَّهِ إِنَّ ٱللَّهَ يُحِبُّ ٱلْمُتَوَكِّلِينَ﴾ [آل عمران: ١٥٩].\n\nوتمتد الرحمة إلى ما بين المؤمنين، قال تعالى: ﴿إِنَّمَا ٱلْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا۟ بَيْنَ أَخَوَيْكُمْ وَٱتَّقُوا۟ ٱللَّهَ لَعَلَّكُمْ تُرْحَمُونَ﴾ [الحجرات: ١٠]. وهي أساس العدل والإحسان في المجتمع: ﴿إِنَّ ٱللَّهَ يَأْمُرُ بِٱلْعَدْلِ وَٱلْإِحْسَٰنِ وَإِيتَآئِ ذِى ٱلْقُرْبَىٰ وَيَنْهَىٰ عَنِ ٱلْفَحْشَآءِ وَٱلْمُنكَرِ وَٱلْبَغْىِ يَعِظُكُمْ لَعَلَّكُمْ تَذَكَّرُونَ﴾ [النحل: ٩٠].\n\nوأولى الناس بالرحمة الوالدان، قال تعالى: ﴿وَقَضَىٰ رَبُّكَ أَلَّا تَعْبُدُوٓا۟ إِلَّآ إِيَّاهُ وَبِٱلْوَٰلِدَيْنِ إِحْسَٰنًا إِمَّا يَبْلُغَنَّ عِندَكَ ٱلْكِبَرَ أَحَدُهُمَآ أَوْ كِلَاهُمَا فَلَا تَقُل لَّهُمَآ أُفٍّ وَلَا تَنْهَرْهُمَا وَقُل لَّهُمَا قَوْلًا كَرِيمًا﴾ [الإسراء: ٢٣].\n\nفالرحمة ليست شعورًا عابرًا، بل منهج يبدأ من البيت ويمتد إلى العالم كله.",
+      "en": "Mercy in Islam is a way of life\n\nThe Prophet, peace be upon him, was sent as a mercy to all people. The Qur'an says: \"And We have not sent you, [O Muhammad], except as a mercy to the worlds.\" (Quran 21:107). This mercy was visible in the way he treated his companions: \"By an act of mercy from God, you [Prophet] were gentle in your dealings with them- had you been harsh, or hard-hearted, they would have dispersed and left you- so pardon them and ask forgiveness for them. Consult with them about matters, then, when you have decided on a course of action, put your trust in God: God loves those who put their trust in Him.\" (Quran 3:159).\n\nMercy also shapes the bond between believers: \"The believers are naught else than brothers. Therefore make peace between your brethren and observe your duty to Allah that haply ye may obtain mercy.\" (Quran 49:10). It is the foundation of justice and kindness in society: \"Allah commands justice, the doing of good, and liberality to kith and kin, and He forbids all shameful deeds, and injustice and rebellion: He instructs you, that ye may receive admonition.\" (Quran 16:90).\n\nThe people most deserving of our mercy are our parents: \"For your Lord has decreed that you worship none but Him. And honour your parents. If one or both of them reach old age in your care, never say to them ˹even˺ ‘ugh,’ nor yell at them. Rather, address them respectfully.\" (Quran 17:23).\n\nMercy is not a passing feeling; it is a way of living that begins at home and reaches the whole world."
+    },
+    "s13": {
+      "lang": "en",
+      "ar": "",
+      "en": "Brotherhood is not a slogan but a duty: \"The believers are naught else than brothers. Therefore make peace between your brethren and observe your duty to Allah that haply ye may obtain mercy.\" Every quarrel between Muslims is a call to reconcile."
+    },
+    "s5": {
+      "lang": "en",
+      "ar": "",
+      "en": "Say to those of My servants who have gone too far against themselves: do not give up hope of God's kindness, because He pardons all wrongdoing."
+    },
+    "s6": {
+      "lang": "en",
+      "ar": "",
+      "en": "The Prophet was sent for everyone: \"And We have not sent you, [O Muhammad], except as a mercy to the worlds.\" (Quran 21:108)"
+    },
+    "s7": {
+      "lang": "en",
+      "ar": "",
+      "en": "The Qur'an promises relief: \"For indeed, with hardship [will be] ease, so every trouble will soon be over.\" (Quran 94:5)"
+    },
+    "s8": {
+      "lang": "en",
+      "ar": "",
+      "en": "A nineteenth-century English rendering reads: \"Who is he that will lend a generous loan to God? So will He double it to him, and he shall have a noble reward.\" (Quran 57:11)"
+    },
+    "s9": {
+      "lang": "en",
+      "ar": "",
+      "en": "A saying shared online is attributed to the Qur'an: \"Patience is the key to every closed door.\" (Quran 2:290)"
+    },
+    "s10": {
+      "lang": "en",
+      "ar": "",
+      "en": "Good manners are part of faith. A Muslim greets people with a smile, keeps promises, visits the sick and speaks kindly to neighbours. These small acts, repeated every day, shape a gentle character."
+    },
+    "L1": {
+      "lang": "en",
+      "ar": "",
+      "en": "Patience and gratitude: two wings of a believer's life\n\nEvery life passes through days of ease and days of difficulty. The Qur'an teaches the believer how to meet both. It first points to the means of strength: \"O you who have believed, seek help through patience and prayer. Indeed, Allah is with the patient.\" (Quran 2:153). It also tells us plainly that trials are part of the plan: \"And surely We shall try you with something of fear and hunger, and loss of wealth and lives and crops; but give glad tidings to the steadfast,\" (Quran 2:155)\n\nHardship never comes alone. Twice in a row the Qur'an repeats the same promise: \"So truly where there is hardship there is also ease; truly where there is hardship there is also ease.\" (Quran 94:5-6). A believer who remembers this does not lose heart when a door closes.\n\nGratitude is the second wing. \"So remember Me; I will reward you. And be grateful to Me and do not deny Me.\" (Quran 2:152). Gratitude is shown in the tongue, in the heart and in the way we use what we were given.\n\nThose who hold on through hardship are promised more than they can count: \"Say: \"O ye my servants who believe! Fear your Lord, good is (the reward) for those who do good in this world. Spacious is God's earth! those who patiently persevere will truly receive a reward without measure!\"\" (Quran 39:10)\n\nAnd for the one who feels that his mistakes have closed every door, the message is clear. Say to those of My servants who have gone too far against themselves: do not give up hope of God's kindness, because He pardons all wrongdoing.\n\nPatience keeps us standing in the storm, and gratitude keeps us humble in the calm. Together they carry the believer through every season of life."
+    }
+  }/* samples:end */;
+  Object.keys(MORE_SAMPLES).forEach(function (k) { SAMPLES[k] = MORE_SAMPLES[k]; });
+
   /* Document-level verdict copy. One refer item pulls the whole document. */
   var VERDICT = {
     REFER: { cls: 'v-refer', big: 'يُحال للمراجعة',
@@ -89,17 +157,33 @@
 
   /* --- samples ----------------------------------------------------------- */
 
-  var chips = ['s1', 's2', 's3'].map($).filter(Boolean);
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.samples .chip'));
+  var activeSample = null;
   chips.forEach(function (c) {
     c.addEventListener('click', function () {
       var d = SAMPLES[c.id];
       if (!d) return;
       chips.forEach(function (o) { o.setAttribute('aria-pressed', String(o === c)); });
+      activeSample = c.id;
       ar.value = d.ar;
       en.value = d.en;
       if (d.lang) selectLang(d.lang);
       out.innerHTML = '';      // the user presses «افحص الإسناد» themselves
     });
+  });
+
+  /* A sample's Arabic must not stay behind when the user replaces the sample's
+     translation with their own text: it would be checked against a text it
+     does not belong to. A light edit of the sample (start or end still there)
+     keeps it; an Arabic box the user has changed is never touched. */
+  en.addEventListener('input', function () {
+    var d = activeSample && SAMPLES[activeSample];
+    if (!d) return;
+    var v = en.value;
+    if (v.indexOf(d.en.slice(0, 40)) !== -1 || v.indexOf(d.en.slice(-40)) !== -1) return;
+    if (ar.value === d.ar) ar.value = '';
+    chips.forEach(function (o) { o.setAttribute('aria-pressed', 'false'); });
+    activeSample = null;
   });
 
   function selectLang(code) {
