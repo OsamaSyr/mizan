@@ -10,7 +10,7 @@ A pre-publication gate for Qur'anic quotations in translated da'wah content.
 | **Live demo** | https://mizan-ai.duckdns.org |
 | **Video (≤ 2 min)** | https://www.youtube.com/watch?v=eSpAGijaUDc |
 | **Challenge** | تحدي الذكاء الاصطناعي في خدمة المحتوى الإسلامي — **المسار الرابع: أدوات المعرفة والتحقق لتمكين المعرفين بالإسلام** |
-| **For judges** | criteria → evidence: [COMPLIANCE](docs/COMPLIANCE.md) · sources & licences register: [REGISTRY](docs/REGISTRY.md) · we tried to break it: [REDTEAM](docs/REDTEAM.md) · stated limits: [LIMITS](docs/LIMITS.md) · starting version and what was added on 4–6 October: [BASELINE](docs/BASELINE.md) |
+| **For judges** | criteria → evidence: [COMPLIANCE](docs/COMPLIANCE.md) · sources & licences register: [REGISTRY](docs/REGISTRY.md) · we tried to break it: [REDTEAM](docs/REDTEAM.md) · stated limits: [LIMITS](docs/LIMITS.md) |
 
 ## What it does
 
@@ -150,7 +150,7 @@ system calls no hosted AI service; its only model is the local BGE-M3.
 
 | Read | For |
 |---|---|
-| [COMPLIANCE](docs/COMPLIANCE.md) · [REGISTRY](docs/REGISTRY.md) · [SOURCES](docs/SOURCES.md) · [BASELINE](docs/BASELINE.md) | every challenge requirement → evidence; sources, tools and licences; starting version and the work done during the challenge |
+| [COMPLIANCE](docs/COMPLIANCE.md) · [REGISTRY](docs/REGISTRY.md) · [SOURCES](docs/SOURCES.md) | every challenge requirement → evidence; sources, tools and licences |
 | [REDTEAM](docs/REDTEAM.md) · [LIMITS](docs/LIMITS.md) | what an independent review broke and how it was fixed; stated limits |
 | [ARCHITECTURE](docs/ARCHITECTURE.md) · [SEMANTIC](docs/SEMANTIC.md) · [NORMALIZATION](docs/NORMALIZATION.md) | how detection, the AI tier and the comparison work |
 | [TERMS](docs/TERMS.md) · [CLARITY](docs/CLARITY.md) · [REAL_CORPUS](docs/REAL_CORPUS.md) · [DEPLOY](docs/DEPLOY.md) | the panels, the real-world test set, the server kit |
