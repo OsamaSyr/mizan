@@ -44,11 +44,34 @@ Quranpedia.net dump and the Tanzil text, checks every file against pinned
 SHA-256 values and fails unless the index is byte-for-byte the one measured
 below. Docker: `docker build -t mizan . && docker run --rm -p 8000:8000 mizan`.
 
-**AI tier (optional):** `pip install -r requirements-ml.txt`, then
-`python scripts/build_embeddings.py --download` fetches the pinned BGE-M3
-model; the precomputed vectors are already in `data/embeddings/`. Without it,
-MIZAN runs its deterministic path and says so. Server deployment (HTTPS,
-auto-restart, watchdog): [docs/DEPLOY.md](docs/DEPLOY.md).
+**AI tier (optional).** The precomputed verse vectors are already in
+`data/embeddings/`; only the libraries and the pinned BGE-M3 model are added.
+Install into the same Python that runs the app:
+
+```bash
+python3 -m pip install -r requirements-ml.txt
+python3 scripts/build_embeddings.py --download   # fetches the pinned BGE-M3 model
+make run                                          # startup banner: "semantic on — BAAI/bge-m3"
+```
+
+In a virtualenv, point make at it: `make run PYTHON=.venv/bin/python`. Without
+the AI tier, MIZAN runs its deterministic path and says so. Server deployment
+(HTTPS, auto-restart, watchdog): [docs/DEPLOY.md](docs/DEPLOY.md).
+
+### Configuration
+
+Nothing is required: no API keys, no `.env` file, no account. Everything below
+is optional.
+
+| Variable | Default | What it does |
+|---|---|---|
+| `PORT` (make) · `MIZAN_PORT` | `8000` | port: `make run PORT=8001`, or `MIZAN_PORT=8001 python3 app.py` |
+| `MIZAN_HOST` | `127.0.0.1` | bind address (the Docker image uses `0.0.0.0`) |
+| `MIZAN_SEMANTIC` | on when installed | `0` turns the AI tier off |
+| `MIZAN_REVIEW_DB` | `data/review.sqlite` | review queue and audit log file |
+| `MIZAN_ALLOWED_HOSTS` | — | public hostname(s) when served behind a reverse proxy ([DEPLOY](docs/DEPLOY.md)) |
+
+The full list is at the top of [`app.py`](app.py).
 
 ## How it works
 

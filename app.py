@@ -49,6 +49,8 @@ Configuration (environment)
     MIZAN_SEMANTIC        "0" turns the AI tier (BGE-M3) off      (on when installed)
     MIZAN_DEVICE          cpu / mps / cuda for the AI tier       (auto)
     MIZAN_SEM_TOKEN_BUDGET  tokens the AI tier may embed per check (1024)
+    MIZAN_EMB_DIR         AI-tier verse vectors directory      (data/embeddings)
+    MIZAN_SEMANTIC_RETRY_S  seconds before retrying a failed model load (60, doubling; 0 = every call)
     (setup: MIZAN_ACCEPT_NEW_DUMP=1 accepts a Quranpedia dump newer than the pinned one)
 """
 from __future__ import annotations

@@ -51,7 +51,7 @@ eval:  ## python3 -m mizan.eval --suite all --runs 3  ->  results/summary.json, 
 eval-quick:  ## smoke test of the evaluation on small samples -> results/quick/
 	@$(PYTHON) -m mizan.eval --suite $(SUITE) --runs 1 --quick
 
-run:  ## serve the app (MIZAN_PORT, default 8000)
+run:  ## serve the app on port 8000 (another port: make run PORT=8001)
 	@MIZAN_PORT=$(PORT) $(PYTHON) app.py
 
 docker:  ## build the container image (runs setup inside the build)
